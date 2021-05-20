@@ -1,0 +1,108 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@200;300;700;900&display=swap');
+
+
+.alert-warning {
+  color: #ffffff !important;
+  background-color: #faa21a !important;
+  border-color: #faa21a !important; 
+  text-align: center !important;
+  font-family: 'Public Sans', sans-serif !important;
+}
+
+/* Full size main background image https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_full_page*/
+
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+/*background image*/
+.bg {
+  background-image: url("../images/NYC_Skyscrapper.png");
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* logo */
+img{
+  position: absolute;
+  top: 14px;
+  left: 11px;
+}
+
+div#logo_text{
+  position: absolute;
+    top: 27px;
+    left: 163px;
+    color: white;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 122%;
+    font-family: revert;
+}
+
+ul.navbar-nav{
+  font-family: 'Raleway', sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+}
+.navbar-nav{
+margin-right: 35px;
+}
+
+.navbar-light{
+  background-color: 0,0,0,.2;
+}
+
+.navbar .nav-link{
+    color: #ffffff !important;
+    align-content: right !important;
+    border-bottom: 4px solid transparent;
+}
+
+.navbar .nav-link:hover{
+    color: #ffffff !important;
+    border-bottom: 3px solid rgb(0, 255, 106);
+}
+
+.navbar .nav-link:current{
+    color: #f7f239 !important;
+    border-bottom: 3px solid rgb(0, 255, 106);
+}
+
+/* Search navbar trip*/
+
+/* Position the navbar container inside the image */
+.container {
+  position: absolute;
+  margin: 20px;
+  width: auto;
+}
+
+/* The navbar */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Navbar links */
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
