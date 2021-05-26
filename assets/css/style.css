@@ -2,6 +2,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@200;300;700;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
 
+h1{
+  
+}
+
+h2{
+
+}
+
+h3{
+  font-size: 1.2rem !important;
+}
+
+p{
+
+}
+
 .alert-warning {
   color: #ffffff !important;
   background-color: #faa21a !important;
@@ -31,7 +47,7 @@ body, html {
 }
 
 /* logo */
-img{
+img.logo{
   position: absolute;
   top: 14px;
   left: 11px;
@@ -67,6 +83,11 @@ margin-right: 35px;
 .navbar .nav-link:current{
     color: #f7f239 !important;
     border-bottom: 3px solid rgb(0, 255, 106);
+}
+
+button.btn.btn-success.btn-rounded{
+  margin-left: 10px;
+  margin-top: 3px;
 }
 
 /* Search navbar trip*/
@@ -110,4 +131,48 @@ ul.nav.justify-content-center{
   display: block;
   position: relative;
   left: 58px;
+}
+
+.about_img{
+  margin-top: 90px;
+  margin-bottom: 90px;
+}
+
+.about_text{
+  margin-top: 90px;
+  margin-bottom: 90px;
+}
+
+#offer{
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.margin{
+  margin-top: 30px !important;
+}
+
+#contact{
+  background-color: #033824;
+  height: 350px;
+  padding-left: 30px;
+}
+
+.footer_logo{
+  margin-top: 20px;
+}
+
+#footerlogo_text{
+  color: white;
+  margin-left: 79px;
+  font-size: 42px;
+  font-family: 'Fredoka One', cursive;
+  position: relative;
+  top: -59px;
+}
+
+#subscribe_text{
+  color: #ffffff;
+  margin-top: 20px;
+  margin-bottom: 10px;
 }

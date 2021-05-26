@@ -21,87 +21,233 @@
 
 <body>
 	<!-- main background image -->
-	<div class="bg"></div>
-	<header class="fixed-top">
-		<div class="alert alert-warning alert-dismissible fade show mb-0" role="alert">
-			<strong>Coronavirus (Covid-19) Information and Resources</strong> <a href="https://www.cdc.gov/"
-				target="_blank">Click here
-				for details!</a>
-
-			<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-		</div>
-		<nav class="navbar navbar-expand-lg navbar navbar-light bg-light" style="height: 77px;">
-			<div class="navbar-brand" href="#"><img src="assets/images/tour_nyc_logo.png"
-					alt="Tour NYC Travel Agency logo"></div>
-			<div id="logo_text">Tour NYC</div>
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-				aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-			</button>
-			<div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-				<ul class="navbar-nav text-right">
-					<li class="nav-item active">
-						<a class="nav-link current" href="#home">Home<span class="sr-only">(current)</span></a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#aboutus">About Us</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#aboutnyc">About NYC</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#contact">Contact</a>
-					</li>
-				</ul>
+	<!--<div class="bg"></div>-->
+	<div id="main_carousel" class="carousel slide" data-ride="carousel">
+		<div class="carousel-inner">
+			<div class="carousel-item active" data-interval="2000">
+				<img class="d-block w-100" src="assets/images/NYC_Skyscrapper.png" alt="First slide">
 			</div>
-		</nav>
-	</header>
-	<div class="container">
-		<div class="row">
-			<div class="col align-self-center">
-				<ul class="nav justify-content-center img-fluid">
-					<li class="nav-item">
-						<a class="secondnav-link" href="#"><i class="fas fa-map-marker-alt"></i>Places to Stay</a>
-					</li>
-					<li class="nav-item">
-						<a class="secondnav-link" href="#"><i class="fas fa-eye"></i>Attractions</a>
-					</li>
-					<li class="nav-item">
-						<a class="secondnav-link" href="#"><i class="fas fa-utensils"></i>Eating Experiences</a>
-					</li>
-				</ul>
+			<div class="carousel-item" data-interval="2000">
+				<img class="d-block w-100" src="assets/images/brooklyn_pier.png" alt="Second slide">
+			</div>
+			<div class="carousel-item" data-interval="2000">
+				<img class="d-block w-100" src="assets/images/NYC_Skyscrapper.png" alt="Third slide">
 			</div>
 		</div>
 	</div>
-	<div class="containter-fluid">
-		<div class="row">
-			<div class="col-12">
-				<section id="home">
+	<section id="home">
+		<header class="fixed-top">
+			<div class="alert alert-warning alert-dismissible fade show mb-0" role="alert">
+				<strong>Coronavirus (Covid-19) Information and Resources</strong> <a href="https://www.cdc.gov/"
+					target="_blank">Click here
+					for details!</a>
 
-				</section>
-				<section id="aboutus">
-					<div class="row justify-content-center">
-						<div class="col-12 col-md-6 col-lg-4">
-							<div class="aboutheading text-center">
-								<h1>About Us</h1>
+				<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+			</div>
+			<nav class="navbar navbar-expand-lg navbar navbar-light bg-light" style="height: 77px;">
+				<div class="navbar-brand" href="#"><img src="assets/images/tour_nyc_logo.png" class="logo"
+						alt="Tour NYC Travel Agency logo"></div>
+				<div id="logo_text">Tour NYC</div>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+					aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+					<ul class="navbar-nav text-right">
+						<li class="nav-item active">
+							<a class="nav-link current" href="#home">Home<span class="sr-only">(current)</span></a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#aboutus">About Us</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#aboutnyc">About NYC</a>
+						</li>
+						<li class="nav-item">
+							<button type="button" class="btn btn-success btn-rounded" href="#reserve_now">Reserve
+								Now</button>
+						</li>
+					</ul>
+				</div>
+			</nav>
+		</header>
+		<div class="container">
+			<div class="row">
+				<div class="col align-self-center">
+					<ul class="nav justify-content-center">
+						<li class="nav-item">
+							<a class="secondnav-link" href="#"><i class="fas fa-map-marker-alt"></i>Places to Stay</a>
+						</li>
+						<li class="nav-item">
+							<a class="secondnav-link" href="#"><i class="fas fa-eye"></i>Attractions</a>
+						</li>
+						<li class="nav-item">
+							<a class="secondnav-link" href="#"><i class="fas fa-utensils"></i>Eating Experiences</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section id="aboutus">
+		<div class="container">
+			<div class="row">
+				<div class="col"></div>
+				<div class="col justify-content-center">
+					<img src="assets/images/tournyc.png" class="about_img" alt="Tour NYC Travel Agency">
+				</div>
+				<div class="col-7">
+					<div class="about_text">
+						<h1>About Us</h1>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec porttitor
+							ipsum. Praesent dignissim, eros eu pulvinar iaculis, nulla dolor semper purus,
+							id
+							mattis libero erat et turpis. Curabitur blandit nunc eros, in vulputate libero
+							aliquet non. Aliquam est enim, eleifend vel egestas vel, interdum eu enim. Donec
+							auctor ligula id aliquet posuere. In et imperdiet nisi. Maecenas ligula felis,
+							ultrices a varius ac, gravida malesuada sapien. Praesent iaculis, purus vitae
+							mattis
+							luctus, justo erat posuere erat, ut porttitor neque eros ac ipsum.
+						</p>
+					</div>
+				</div>
+				<div class="col"></div>
+			</div>
+			<div id="offer">
+				<h2>We Offer</h2>
+			</div>
+		</div>
+		<hr>
+		<div class="container">
+			<div class="row margin">
+				<div class="col-xs-12 col-sm-6 col-md-3">
+					<img src="assets/images/peace_icon.png" alt="Peace of mind">
+					<h3>Peace of mind</h3>
+					<p>Best places to choose from Accept nothing less than you deserve
+					</p>
+				</div>
+				<div class="col-xs-12 col-sm-6 col-md-3">
+					<img src="assets/images/stay_icon.png" alt="place to stay">
+					<h3>Places to stay</h3>
+					<p>full equipped rooms, amenities, 24hrs concierge</p>
+				</div>
+				<div class="col-xs-12 col-sm-6 col-md-3">
+					<img src="assets/images/money_icon.png" alt="more for less">
+					<h3>More for less</h3>
+					<p>Free Experiences, Free Activities, more
+						amenities — more value</p>
+				</div>
+				<div class="col-xs-12 col-sm-6 col-md-3">
+					<img src="assets/images/inclusion_icon.png" alt="A place for everyone">
+					<h3>A place for Everyone</h3>
+					<p>We represent diversity & inclusion everywhere you go there is culture</p>
+				</div>
+			</div>
+		</div>
+		<hr>
+	</section>
+	<section id="aboutnyc">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<br>
+					<br>
+					<h1>About New York</h1>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec porttitor
+						ipsum. Praesent dignissim, eros eu pulvinar iaculis, nulla dolor semper purus,
+						id
+						mattis libero erat et turpis. Curabitur blandit nunc eros, in vulputate libero
+						aliquet non. Aliquam est enim, eleifend vel egestas vel, interdum eu enim. Donec
+						auctor ligula id aliquet posuere. In et imperdiet nisi. Maecenas ligula felis,
+						ultrices a varius ac, gravida malesuada sapien. Praesent iaculis, purus vitae
+						mattis
+						luctus, justo erat posuere erat, ut porttitor neque eros ac ipsum.
+					</p>
+					<br>
+					<h2>Points of Interest</h2>
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-2 col-md-6">
+								<img src="assets/images/thevessel_ny.png" alt="A place for everyone">
 							</div>
 
+							<div class="col-lg-2 col-md-6">
+								text here
+							</div>
+
+							<div class="col-lg-2 col-md-6">
+								picture here
+							</div>
+
+							<div class="col-lg-2 col-md-6">
+								text here
+							</div>
+
+							<div class="col-lg-2 col-md-6">
+								pic here
+							</div>
+							text here
 						</div>
-						<div class="col-12 col-md-7 col-lg-4">
-							<div class="abouttext">
-								<p>text here</p>
+						<div class="row interest_margin">
 
-								<p>text here
-								</p>
+							<div class="col-lg-2 col-md-6">
+								picture here
 							</div>
+
+							<div class="col-lg-2 col-md-6">
+								text here
+							</div>
+
+							<div class="col-lg-2 col-md-6">
+								picture here
+							</div>
+
+							<div class="col-lg-2 col-md-6">
+								text here
+							</div>
+
+							<div class="col-lg-2 col-md-6">
+								pic here
+							</div>
+							text here
 						</div>
 					</div>
-				</section>
-				<section id="aboutnyc"></section>
-				<section id="contact"></section>
+	</section>
+	<section id="reserve_now">
+		<div class="container">
+			<div class="row">
+				<div class="col">reserve now</div>
 			</div>
 		</div>
-	</div>
+	</section>
+	<section id="contact">
+		<div class="row">
+			<div class="col">
+				<div id="footer_logo"><img src="assets/images/tour_nyc_logo.png" class="footer_logo"
+						alt="Tour NYC Travel Agency logo">
+					<div id="footerlogo_text">Tour NYC</div>
+				</div>
+				<form>
+					<div class="form-group">
+						<div id="subscribe_text">Want to receive exclusive offers?
+							<br>
+							Subscribe to our newsletter!
+						</div>
+						<label for="exampleInputEmail1"></label>
+						<input type="email" class="form-control-inline" id="exampleInputEmail1"
+							aria-describedby="emailHelp" placeholder="Enter email">
+						<button type="submit" class="btn btn-primary">Subscribe</button>
+					</div>
+				</form>
+			</div>
+			<div class="col">
+				Tour Nyc.,
+				13th Street. 47 W 13th St,
+				New York, NY 10011, USA 1646.536.7543
+				inquiry@tournyc.com
+				Our Social Media
+			</div>
+	</section>
 	<!-- Bootstrap Bundle with Popper -->
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
 		integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
