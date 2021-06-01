@@ -2,6 +2,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@200;300;700;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
 
+.row {
+  --bs-gutter-x: 0 !important;
+}
+
 h1{
   
 }
@@ -24,26 +28,6 @@ p{
   border-color: #faa21a !important; 
   text-align: center !important;
   font-family: 'Public Sans', sans-serif !important;
-}
-
-/* Full size main background image https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_full_page*/
-
-body, html {
-  height: 100%;
-  margin: 0;
-}
-
-/*background image*/
-.bg {
-  background-image: url("../images/NYC_Skyscrapper.png");
-
-  /* Full height */
-  height: 100%;
-
-  /* Center and scale the image nicely */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 /* logo */
@@ -85,12 +69,73 @@ margin-right: 35px;
     border-bottom: 3px solid rgb(0, 255, 106);
 }
 
-button.btn.btn-success.btn-rounded{
+a.btn.btn-success.btn-rounded{
   margin-left: 10px;
   margin-top: 3px;
 }
 
 /* Search navbar trip*/
+.inner-form{
+  background: rgba(0,0,0,.5);
+    padding: 16px;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.inner-form .input-field {
+  position: relative;
+  border-right: 1px solid #ddd;
+}
+
+.inner-form .input-field .icon-wrap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 40px;
+  height: 100%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  -ms-flex-align: center;
+  align-items: center;
+  z-index: 1;
+}
+
+.inner-form .input-field .icon-wrap svg {
+  fill: #555;
+  width: 14px;
+  height: 14px;
+}
+
+.inner-form .input-field input {
+  height: 70px;
+  background: #fff;
+  border-radius: 0;
+  border: 0;
+  display: block;
+  width: 100%;
+  padding: 10px 20px 10px 45px;
+  font-size: 16px;
+  color: #555;
+  font-weight: 400;
+  font-family: poppins,sans-serif;
+}
+
+#quote{
+  color: #ffffff;
+  position: absolute;
+  top: 196px;
+  left: 100px;
+  font-size: 57px;
+  font-family: 'Fredoka One';
+  line-height: 71px;
+}
 
 /* Second navigation*/
 div.col.align-self-center{
@@ -133,9 +178,22 @@ ul.nav.justify-content-center{
   left: 58px;
 }
 
+.scrolldown-area {
+  text-align: center;
+  width: 100%;
+  font-size: 55px;
+  margin-top: 42px;
+  color: white !important;
+}
+
+a#scrolldown.scrolldown{
+  color: #ffffff !important;
+}
+
 .about_img{
   margin-top: 90px;
   margin-bottom: 90px;
+  margin-right: 51px;
 }
 
 .about_text{
@@ -151,6 +209,18 @@ ul.nav.justify-content-center{
 .margin{
   margin-top: 30px !important;
 }
+
+#aboutNYC-text{
+  margin-top: 54px;
+  padding-right: 32px;
+  margin-bottom: 54px;
+}
+
+div.video-content{
+  margin-top: 63px;
+}
+
+div#map {min-height: 360px;}
 
 #contact{
   background-color: #033824;
@@ -171,8 +241,81 @@ ul.nav.justify-content-center{
   top: -59px;
 }
 
-#subscribe_text{
-  color: #ffffff;
+#address{
+  color: white;
+  font-family: 'Fredoka One', cursive;
+  margin-top: 52px;
+}
+
+svg.bi.bi-telephone-fill{
+  margin-right: 8px;
+  color: #fed326;
+}
+
+#phone_number{
+  color: white;
+  font-family: 'Fredoka One', cursive;
+  margin-top: 30px;
+}
+
+svg.bi.bi-envelope-fill{
+  margin-right: 8px;
+  color: #fed326;
+}
+
+#email{
+  color: white;
+  font-family: 'Fredoka One', cursive;
+}
+
+#social_media{
+  color: #fed326;
+  font-family: 'Fredoka One', cursive;
+  font-size: 20px;
   margin-top: 20px;
   margin-bottom: 10px;
 }
+
+#social_icons{
+  color: white;
+  word-spacing: 13px;
+}
+
+.bi:hover{
+  fill:#f7f239 !important;
+}
+
+.copyright{
+    color: white;
+    font-size: 11px;
+    font-family: 'Public Sans';
+}
+
+/* Buttontotop */
+.btn.btn-elegant{
+  font-family: Montserrat;
+  color: #fff;
+    background: linear-gradient(300deg,#B993D6 0%,#8CA6DB 51%)!important
+  }
+  
+  #back-to-top.show {
+  opacity: 1;
+  visibility: visible;
+  }
+  #back-to-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: fixed;
+  bottom: 46px;
+  right: 30px;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
+  padding: 10px 20px;
+  border-radius: 5px;
+  color: #fff;
+  -webkit-transition: background-color .3s, opacity .3s, visibility .5s;
+  -o-transition: background-color .3s, opacity .3s, visibility .5s;
+  transition: background-color .3s, opacity .3s, visibility .5s;
+  }
