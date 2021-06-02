@@ -1,82 +1,76 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@200;300;700;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
 
 .row {
-  --bs-gutter-x: 0 !important;
+    --bs-gutter-x: 0 !important;
 }
 
-h1{
-  
+h1 {}
+
+h2 {}
+
+h3 {
+    font-size: 1.2rem !important;
 }
 
-h2{
-
-}
-
-h3{
-  font-size: 1.2rem !important;
-}
-
-p{
-
-}
+p {}
 
 .alert-warning {
-  color: #ffffff !important;
-  background-color: #faa21a !important;
-  border-color: #faa21a !important; 
-  text-align: center !important;
-  font-family: 'Public Sans', sans-serif !important;
+    color: #ffffff !important;
+    background-color: #faa21a !important;
+    border-color: #faa21a !important;
+    text-align: center !important;
+    font-family: 'Public Sans', sans-serif !important;
 }
 
 /* logo */
-img.logo{
-  position: absolute;
-  top: 14px;
-  left: 11px;
-  width: 49px;
+img.logo {
+    position: absolute;
+    top: 14px;
+    left: 11px;
+    width: 49px;
 }
 
-div#logo_text{
-  color: #033824;
-  font-size: 42px;
-  font-family: 'Fredoka One', cursive;
-  margin-left: 45px;
+div#logo_text {
+    color: #033824;
+    font-size: 42px;
+    font-family: 'Fredoka One', cursive;
+    margin-left: 45px;
 }
 
-ul.navbar-nav{
-  font-family: 'Fredoka One', cursive;
-  font-size: 20px;
-}
-.navbar-nav{
-margin-right: 35px;
+ul.navbar-nav {
+    font-family: 'Fredoka One', cursive;
+    font-size: 20px;
 }
 
-.navbar .nav-link{
+.navbar-nav {
+    margin-right: 35px;
+}
+
+.navbar .nav-link {
     color: #033824 !important;
     align-content: right !important;
     border-bottom: 4px solid transparent;
 }
 
-.navbar .nav-link:hover{
+.navbar .nav-link:hover {
     color: #033824 !important;
     border-bottom: 3px solid rgb(255, 153, 0);
 }
 
-.navbar .nav-link:current{
+.navbar .nav-link:current {
     color: #f7f239 !important;
     border-bottom: 3px solid rgb(0, 255, 106);
 }
 
-a.btn.btn-success.btn-rounded{
-  margin-left: 10px;
-  margin-top: 3px;
+a.btn.btn-success.btn-rounded {
+    margin-left: 10px;
+    margin-top: 3px;
 }
 
 /* Search navbar trip*/
-.inner-form{
-  background: rgba(0,0,0,.5);
+.inner-form {
+    background: rgba(0, 0, 0, .5);
     padding: 16px;
     display: -ms-flexbox;
     display: flex;
@@ -88,256 +82,271 @@ a.btn.btn-success.btn-rounded{
 }
 
 .inner-form .input-field {
-  position: relative;
-  border-right: 1px solid #ddd;
+    position: relative;
+    border-right: 1px solid #ddd;
 }
 
 .inner-form .input-field .icon-wrap {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 40px;
-  height: 100%;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: end;
-  justify-content: flex-end;
-  -ms-flex-align: center;
-  align-items: center;
-  z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40px;
+    height: 100%;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    -ms-flex-align: center;
+    align-items: center;
+    z-index: 1;
 }
 
 .inner-form .input-field .icon-wrap svg {
-  fill: #555;
-  width: 14px;
-  height: 14px;
+    fill: #555;
+    width: 14px;
+    height: 14px;
 }
 
 .inner-form .input-field input {
-  height: 70px;
-  background: #fff;
-  border-radius: 0;
-  border: 0;
-  display: block;
-  width: 100%;
-  padding: 10px 20px 10px 45px;
-  font-size: 16px;
-  color: #555;
-  font-weight: 400;
-  font-family: poppins,sans-serif;
+    height: 70px;
+    background: #fff;
+    border-radius: 0;
+    border: 0;
+    display: block;
+    width: 100%;
+    padding: 10px 20px 10px 45px;
+    font-size: 16px;
+    color: #555;
+    font-weight: 400;
+    font-family: poppins, sans-serif;
 }
 
-#quote{
-  color: #ffffff;
-  position: absolute;
-  top: 196px;
-  left: 100px;
-  font-size: 57px;
-  font-family: 'Fredoka One';
-  line-height: 71px;
+#quote {
+    color: #ffffff;
+    position: absolute;
+    top: 196px;
+    left: 100px;
+    font-size: 57px;
+    font-family: 'Fredoka One';
+    line-height: 71px;
 }
 
 /* Second navigation*/
-div.col.align-self-center{
-  position: absolute;
-  top: 480px;
-  left: 0px;
+div.col.align-self-center {
+    position: absolute;
+    top: 480px;
+    left: 0px;
 }
 
-a.secondnav-link{
-  padding-right: 20px;
-  padding-left: 20px;
-  color: white;
-  text-decoration: none;
-  font-family: 'Public Sans';
+a.secondnav-link {
+    padding-right: 20px;
+    padding-left: 20px;
+    color: white;
+    text-decoration: none;
+    font-family: 'Public Sans';
 }
 
-ul.nav.justify-content-center{
-  height: 50px;
+ul.nav.justify-content-center {
+    height: 50px;
 }
 
-.fas{
-  font-size: 30px;
+.fas {
+    font-size: 30px;
 }
 
-.fas.fa-map-marker-alt{
-  display: block;
-  position: relative;
-  left: 46px;
+.fas.fa-map-marker-alt {
+    display: block;
+    position: relative;
+    left: 46px;
 }
 
-.fas.fa-eye{
-  display: block;
-  position: relative;
-  left: 24px;
+.fas.fa-eye {
+    display: block;
+    position: relative;
+    left: 24px;
 }
 
-.fas.fa-utensils{
-  display: block;
-  position: relative;
-  left: 58px;
+.fas.fa-utensils {
+    display: block;
+    position: relative;
+    left: 58px;
 }
 
 .scrolldown-area {
-  text-align: center;
-  width: 100%;
-  font-size: 55px;
-  margin-top: 42px;
-  color: white !important;
+    text-align: center;
+    width: 100%;
+    font-size: 55px;
+    margin-top: 42px;
+    color: white !important;
 }
 
-a#scrolldown.scrolldown{
-  color: #ffffff !important;
+a#scrolldown.scrolldown {
+    color: #ffffff !important;
 }
 
-.about_img{
-  margin-top: 90px;
-  margin-bottom: 90px;
-  margin-right: 51px;
+.about_img {
+    margin-top: 90px;
+    margin-bottom: 90px;
+    margin-right: 51px;
 }
 
-.about_text{
-  margin-top: 90px;
-  margin-bottom: 90px;
+.about_text {
+    margin-top: 90px;
+    margin-bottom: 90px;
 }
 
-#offer{
-  text-align: center;
-  margin-bottom: 20px;
+#offer {
+    text-align: center;
+    margin-bottom: 20px;
 }
 
-.margin{
-  margin-top: 30px !important;
+.margin {
+    margin-top: 30px !important;
 }
 
-#aboutNYC-text{
-  margin-top: 54px;
-  padding-right: 32px;
-  margin-bottom: 54px;
+#aboutNYC-text {
+    margin-top: 54px;
+    padding-right: 32px;
+    margin-bottom: 54px;
 }
 
-div.video-content{
-  margin-top: 63px;
+div.video-content {
+    margin-top: 63px;
 }
 
 .choices {
-  background-color: #ff6600;
-  width: 100%;
-  min-height: 100px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #fff;
+    background-color: #ff6600;
+    width: 100%;
+    min-height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
 }
 
-div#map {min-height: 360px;}
-
-#contact{
-  background-color: #033824;
-  height: 350px;
-  padding-left: 30px;
+.choices a {
+    color: #fff;
 }
 
-.footer_logo{
-  margin-top: 20px;
+div#map {
+    min-height: 360px;
 }
 
-#footerlogo_text{
-  color: white;
-  margin-left: 79px;
-  font-size: 42px;
-  font-family: 'Fredoka One', cursive;
-  position: relative;
-  top: -59px;
+#contact {
+    background-color: #033824;
+    height: 400px;
+    padding-left: 30px;
 }
 
-#address{
-  color: white;
-  font-family: 'Fredoka One', cursive;
-  margin-top: 52px;
+.footer_logo {
+    margin-top: 20px;
 }
 
-svg.bi.bi-telephone-fill{
-  margin-right: 8px;
-  color: #fed326;
+#footerlogo_text {
+    color: white;
+    margin-left: 79px;
+    font-size: 42px;
+    font-family: 'Fredoka One', cursive;
+    position: relative;
+    top: -59px;
 }
 
-#phone_number{
-  color: white;
-  font-family: 'Fredoka One', cursive;
-  margin-top: 30px;
+#address {
+    color: white;
+    font-family: 'Fredoka One', cursive;
+    margin-top: 52px;
 }
 
-svg.bi.bi-envelope-fill{
-  margin-right: 8px;
-  color: #fed326;
+#contact_Us {
+    color: #fed326;
+    font-family: 'Fredoka One', cursive;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 10px;
 }
 
-#email{
-  color: white;
-  font-family: 'Fredoka One', cursive;
+svg.bi.bi-telephone-fill {
+    margin-right: 8px;
+    color: #fed326;
 }
 
-#social_media{
-  color: #fed326;
-  font-family: 'Fredoka One', cursive;
-  font-size: 20px;
-  margin-top: 20px;
-  margin-bottom: 10px;
+#phone_number {
+    color: white;
+    font-family: 'Fredoka One', cursive;
 }
 
-#social_icons{
-  color: white;
-  word-spacing: 13px;
+svg.bi.bi-envelope-fill {
+    margin-right: 8px;
+    color: #fed326;
 }
 
-.bi:hover{
-  fill:#f7f239 !important;
+#email {
+    color: white;
+    font-family: 'Fredoka One', cursive;
 }
 
-#FooterMap{
-  height: 200px;
-  width: 200px;
-  z-index: 2;
+#social_media {
+    color: #fed326;
+    font-family: 'Fredoka One', cursive;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 10px;
 }
 
-.copyright{
+#social_icons {
+    color: white;
+    word-spacing: 13px;
+}
+
+.bi:hover {
+    fill: #f7f239 !important;
+}
+
+#FooterMap {
+    height: 232px;
+    width: 325px;
+    z-index: 2;
+    margin-top: 57px;
+    margin-right: 92px;
+}
+
+div.col.copyright {
+    text-align: center;
+    margin-top: 58px;
+}
+
+.copyright {
     color: white;
     font-size: 11px;
     font-family: 'Public Sans';
 }
 
 /* Buttontotop */
-.btn.btn-elegant{
-  font-family: Montserrat;
-  color: #fff;
-    background: linear-gradient(300deg,#B993D6 0%,#8CA6DB 51%)!important
-  }
-  
-  #back-to-top.show {
-  opacity: 1;
-  visibility: visible;
-  }
-  #back-to-top {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  position: fixed;
-  bottom: 46px;
-  right: 30px;
-  opacity: 0;
-  visibility: hidden;
-  z-index: 1000;
-  padding: 10px 20px;
-  border-radius: 5px;
-  color: #fff;
-  -webkit-transition: background-color .3s, opacity .3s, visibility .5s;
-  -o-transition: background-color .3s, opacity .3s, visibility .5s;
-  transition: background-color .3s, opacity .3s, visibility .5s;
-  }
+.btn.btn-elegant {
+    font-family: Montserrat;
+    color: #fff;
+    background: linear-gradient(300deg, #B993D6 0%, #8CA6DB 51%) !important
+}
 
-  #FooterMap {
-    height: 200px;
-    width: 200px;
-    z-index: 2;
-  }
+#back-to-top.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+#back-to-top {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: fixed;
+    bottom: 46px;
+    right: 30px;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1000;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: #fff;
+    -webkit-transition: background-color .3s, opacity .3s, visibility .5s;
+    -o-transition: background-color .3s, opacity .3s, visibility .5s;
+    transition: background-color .3s, opacity .3s, visibility .5s;
+}
