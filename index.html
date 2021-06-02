@@ -19,7 +19,7 @@
 		integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
 </head>
 
-<body>
+<body onload="initMap();">
 	<!-- main background image -->
 	<section id="home">
 		<div id="main_carousel" class="carousel slide" data-bs-ride="carousel">
@@ -290,6 +290,54 @@
 			</div>
 		</div>
 		<hr>
+		<div id="hanoi" style="display: none;">
+			<h2>Hanoi</h2>
+			<div class="city-description">
+				<p>
+					Negotiate a passage past the ubiquitous knock-off merchants and you’ll find the original streets of the Old Quarter. Defiant real-deal farmers hawk their wares, while city folk breakfast on noodles, practise t’ai chi
+					at dawn or play chess with goateed grandfathers. Dine on the wild and wonderful at every corner, sample market wares, uncover an evolving arts scene, then sleep soundly in luxury for very little cost. Meet the
+					people, delve into the past and witness the awakening of a Hanoi on the move.
+				</p>
+			</div>
+
+			<!--Start of Choices-->
+			<section class="choices row no-gutters" id="choices-nyc">
+				<div class="col-lg-2 col-4 grow">
+					<a href="#choices-nyc" class="choices-items places_to_stay">
+						<i class="fas fa-map-marker-alt"></i>
+						<h4>Places to Stay</h4>
+					</a>
+				</div>
+
+				<div class="col-lg-2 col-4 grow">
+					<a href="#choices-nyc" class="choices-items Attractions">
+						<i class="fas fa-eye"></i>
+						<h4>Attractions</h4>
+					</a>
+				</div>
+
+				<div class="col-lg-2 col-4 grow">
+					<a href="#choices-nyc" class="choices-items eating_experiences">
+						<i class="fas fa-utensils"></i>
+						<h4>Eating Experiences</h4>
+					</a>
+				</div>
+
+				<div class="col-lg-2 col-4 grow">
+					<a href="#choices-nyc" class="choices-items hotels">
+						<i class="fas fa-hotel icon"></i>
+						<h4>Hotels</h4>
+					</a>
+				</div>
+
+				<div class="col-lg-2 col-4 grow">
+					<a href="#choices-nyc" class="choices-items attractions">
+						<i class="fas fa-theater-masks icon"></i>
+						<h4>Attractions</h4>
+					</a>
+				</div>
+			</section>
+		</div>
 		<!-- Map starts Here -->
 		<div id="map" style="position: relative; overflow: hidden;">
 			<div
@@ -1025,7 +1073,7 @@
 				</div>
 			</div>
 			<div class="col">
-				<div id="map"></div>
+				<div id="FooterMap"></div>
 			</div>
 			<div class="col copyright">© 2021 Tour NYC, Inc. All rights reserved</div>
 	</section>
@@ -1038,8 +1086,7 @@
 	<script
 		src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
 	<!-- google maps API file -->
-	<script async="" defer=""
-		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCHTSM6aKi3_O3oY63zun4k_IB9ycoo4v8&amp;callback=initMap"></script>
+	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCHTSM6aKi3_O3oY63zun4k_IB9ycoo4v8"></script>
 	<script src="assets/js/map.js"></script>
 </body>
 
