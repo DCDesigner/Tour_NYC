@@ -2,11 +2,11 @@ function initMap() {
     var map = new google.maps.Map(document.getElementById("map"), {
         zoom: 3,
         center: {
-            lat: 46.619261,
-            lng: -33.134766
+            lat:  40.767266,
+            lng: -73.976431
         }
     });
-
+   
     var labels = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
     var locations = [
@@ -21,6 +21,6 @@ function initMap() {
             label: labels[i % labels.length]
         });
     });
-
+    //adds the marker image for our map, balso going to create them in a cluster if they're close together using that clusterer library that was already loaded
     var markerCluster = new MarkerClusterer(map, markers, { imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m' });
 }
