@@ -1,85 +1,233 @@
+// The following example creates five accessible and
+// focusable markers.
 function initMap() {
-    let map = new google.maps.Map(document.getElementById("map"), {
+    const map = new google.maps.Map(document.getElementById("map"), {
         zoom: 12,
-        center: {
-            lat: 40.767266,
-            lng: -73.976431
-        }
-    });
-
-    let labels = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-
-    let locations = [{
-            lat: 40.703621,
-            lng: -74.012149
-        },
-        {
-            lat: 41.084045,
-            lng: -73.874245
-        },
-        {
-            lat: 40.754932,
-            lng: -73.984016
-        }
-    ];
-
-    let markers = locations.map(function(location, i) {
-        return new google.maps.Marker({
-            position: location,
-            label: labels[i % labels.length]
-        });
-    });
-    //adds the marker image for our map, balso going to create them in a cluster if they're close together using that clusterer library that was already loaded
-    let markerCluster = new MarkerClusterer(map, markers, {
-        imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m'
-    });
-}
-
-
-//footermap
-
-/*function initFooterMap() {
-    let map = new google.maps.Map(document.getElementById("FooterMap"), {
-        zoom: 14,
         center: {
             lat: 40.736662,
             lng: -73.996238
-        }
-    });*/
-// This example displays a marker at the center of Australia.
-// When the user clicks the marker, an info window opens.
+        },
+    });
+
+    //Kochi 
+    var markerKochi = new google.maps.Marker({
+        position: {
+            lat: 40.765099,
+            lng: -73.993775
+        },
+        map: map,
+        title: "Kochi Korean Restaurant",
+
+    });
+
+    var contentStringKochi =
+        '<div id="content_kochi">' +
+        '<div id="siteNotice_kochi">' +
+        '<span id="infowindow_title_kochi">Tour NYC</span>' +
+        '<div id="bodyContentkochi">' +
+        "Travel Agency<br/><br/>" +
+        "13 th Street .47 W 13 th St, <br/>" +
+        "New York, NY 10011, USA" +
+        '<div id ="tag_kochi">Great Deals</div>' +
+        '<div id="tag_details">50% off</div>' +
+        '<div id="infowindow_image_kochi"> ' +
+        "<img src='assets/images/tour_nyc_logo.png'>" +
+        "</div>" +
+        "</div>";
+
+    var infowindow_kochi = new google.maps.InfoWindow({
+        content: contentStringKochi,
+        maxwidth: 500,
+    });
+
+    markerKochi.addListener('click', function() {
+        infowindow_kochi.open(map, markerKochi);
+    });
+
+    //Le Bernardin
+
+    var markerBernardin = new google.maps.Marker({
+        position: {
+            lat: 40.764708,
+            lng: -73.981415
+        },
+        map: map,
+        title: "Le Bernardin Elite French Refined Seafood Restaurant",
+    });
+
+    var contentStringBernardin =
+        '<div id="content_bernardin">' +
+        '<div id="siteNotice_bernardin">' +
+        '<span id="infowindow_title_bernardin">Le Bernardin</span>' +
+        '<div id="bodyContentbernardin">' +
+        "Restaurant<br/><br/>" +
+        "13 th Street .47 W 13 th St, <br/>" +
+        "New York, NY 10011, USA" +
+        '<div id ="tag_kochi">Great Deals</div>' +
+        '<div id="tag_details">50% off</div>' +
+        '<div id="infowindow_image_kochi"> ' +
+        "<img src='assets/images/tour_nyc_logo.png'>" +
+        "</div>" +
+        "</div>";
+    var infowindowBernardin = new google.maps.InfoWindow({
+        content: contentStringBernardin,
+        maxwidth: 500,
+    });
+
+    markerBernardin.addListener('click', function() {
+        infowindowBernardin.open(map, markerBernardin);
+    });
+
+    //Le Cilantro
+
+    var markerCilantro = new google.maps.Marker({
+        position: {
+            lat: 40.784952,
+            lng: -73.973241
+        },
+
+        map: map,
+        title: "Le Cilantro Mexican Restaurant",
+    });
+
+    var contentStringCilantro =
+        '<div id="content_Cilantro">' +
+        '<div id="siteNotice_Cilantro">' +
+        '<span id="infowindow_title_Cilantro">Cilantro</span>' +
+        '<div id="bodyContentcilantro">' +
+        "Restaurant<br/><br/>" +
+        "13 th Street .47 W 13 th St, <br/>" +
+        "New York, NY 10011, USA" +
+        '<div id ="tag_kochi">Great Deals</div>' +
+        '<div id="tag_details">50% off</div>' +
+        '<div id="infowindow_image_kochi"> ' +
+        "<img src='assets/images/tour_nyc_logo.png'>" +
+        "</div>" +
+        "</div>";
+    var infowindowCilantro = new google.maps.InfoWindow({
+        content: contentStringCilantro,
+        maxwidth: 500,
+    });
+
+    markerCilantro.addListener('click', function() {
+        infowindowCilantro.open(map, markerCilantro);
+    });
+
+    //212 Steakhouse
+
+    var markerSteakhouse = new google.maps.Marker({
+        position: {
+            lat: 40.760017,
+            lng: -73.966652
+        },
+
+        map: map,
+        title: "212 Steakhouse",
+    });
+
+    var contentStringSteakhouse =
+        '<div id="content_Steakhouse">' +
+        '<div id="siteNotice_Steakhouse">' +
+        '<span id="infowindow_title_">Steakhouse</span>' +
+        '<div id="bodyContentSteakhouse">' +
+        "Restaurant<br/><br/>" +
+        "13 th Street .47 W 13 th St, <br/>" +
+        "New York, NY 10011, USA" +
+        '<div id ="tag_kochi">Great Deals</div>' +
+        '<div id="tag_details">50% off</div>' +
+        '<div id="infowindow_image_kochi"> ' +
+        "<img src='assets/images/tour_nyc_logo.png'>" +
+        "</div>" +
+        "</div>";
+    var infowindowSteakhouse = new google.maps.InfoWindow({
+        content: contentStringSteakhouse,
+        maxwidth: 500,
+    });
+
+    markerSteakhouse.addListener('click', function() {
+        infowindowSteakhouse.open(map, markerSteakhouse);
+    });
+
+    //Thai Villa 
+
+    var markerThaivilla = new google.maps.Marker({
+        position: {
+            lat: 40.741150,
+            lng: -73.991028
+        },
+
+        map: map,
+        title: "Thai Villa",
+    });
+
+    var contentStringThaivilla =
+        '<div id="content_Thaivilla">' +
+        '<div id="siteNotice_Thaivilla">' +
+        '<span id="infowindow_title_">Thai Villa</span>' +
+        '<div id="bodyContentThaivilla">' +
+        "Restaurant<br/><br/>" +
+        "13 th Street .47 W 13 th St, <br/>" +
+        "New York, NY 10011, USA" +
+        '<div id ="tag_kochi">Great Deals</div>' +
+        '<div id="tag_details">50% off</div>' +
+        '<div id="infowindow_image_kochi"> ' +
+        "<img src='assets/images/tour_nyc_logo.png'>" +
+        "</div>" +
+        "</div>";
+    var infowindowThaivilla = new google.maps.InfoWindow({
+        content: contentStringThaivilla,
+        maxwidth: 500,
+    });
+
+    markerThaivilla.addListener('click', function() {
+        infowindowThaivilla.open(map, markerThaivilla);
+    });
+
+}
+
+//footermap
+
+
 function initFooterMap() {
-    const uluru = {
+
+
+    const NY = {
         lat: 40.736662,
         lng: -73.996238
     };
+
     const map = new google.maps.Map(document.getElementById("FooterMap"), {
         zoom: 14,
-        center: uluru,
+        center: NY,
     });
+
     const contentString =
         '<div id="content">' +
         '<div id="siteNotice">' +
-        "</div>" +
-        '<h1 id="firstHeading" class="firstHeading">Uluru</h1>' +
+        '<span id="infowindow_title">Tour NYC</span>' +
         '<div id="bodyContent">' +
-        "<p><b>Uluru</b>, also referred to as <b>Ayers Rock</b>, is a large " +
-        "sandstone rock formation in the southern part of the " +
-        "Northern Territory, central Australia.</p>" +
-        '<p>Attribution: Uluru, <a href="https://en.wikipedia.org/w/index.php?title=Uluru&oldid=297882194">' +
-        "https://en.wikipedia.org/w/index.php?title=Uluru</a> " +
-        "(last visited June 22, 2009).</p>" +
+        "Travel Agency<br/><br/>" +
+        "13 th Street .47 W 13 th St, <br/>" +
+        "New York, NY 10011, USA" +
+        '<div id ="tag">Great Deals</div>' +
+        '<div id="tag_details">50% off</div>' +
+        '<div id="infowindow_image"> ' +
+        "<img src='assets/images/tour_nyc_logo.png'>" +
         "</div>" +
         "</div>";
+
     const infowindow = new google.maps.InfoWindow({
         content: contentString,
     });
+
+
     const marker = new google.maps.Marker({
-        position: uluru,
-        map,
-        title: "Uluru (Ayers Rock)",
+        position: NY,
+        map: map,
+        title: "Tour NYC (Travel Agency)",
     });
-    marker.addListener("click", () => {
+
+    marker.addListener('mouseover', () => {
         infowindow.open(map, marker);
     });
 }
