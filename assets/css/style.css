@@ -423,32 +423,31 @@ div.col.copyright {
     left: 86px;
 }
 
+
 /* Buttontotop */
-.btn.btn-elegant {
-    font-family: Montserrat;
-    color: #fff;
-    background: linear-gradient(300deg, #B993D6 0%, #8CA6DB 51%) !important
-}
+/* credit to https: //www.w3schools.com/howto/howto_js_scroll_to_top.asp */
 
-#back-to-top.show {
-    opacity: 1;
-    visibility: visible;
-}
-
-#back-to-top {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+#myBtn {
+    display: none;
+    /* Hidden by default */
     position: fixed;
-    bottom: 46px;
+    bottom: 20px;
     right: 30px;
-    opacity: 0;
-    visibility: hidden;
-    z-index: 1000;
-    padding: 10px 20px;
-    border-radius: 5px;
-    color: #fff;
-    -webkit-transition: background-color .3s, opacity .3s, visibility .5s;
-    -o-transition: background-color .3s, opacity .3s, visibility .5s;
-    transition: background-color .3s, opacity .3s, visibility .5s;
+    z-index: 99;
+    /* Make sure it does not overlap */
+    border: none;
+    outline: none;
+    background-color: #faa21a;
+    color: white;
+    /* Text color */
+    cursor: pointer;
+    /* Add a mouse pointer on hover */
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 18px;
+
+}
+
+#myBtn:hover {
+    background-color: #474ea1;
 }

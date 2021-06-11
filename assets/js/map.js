@@ -9,6 +9,368 @@ function initMap() {
         },
     });
 
+    //Attractions
+    //Rockefeller Center
+    var markerRockefellercenter = new google.maps.Marker({
+        position: {
+            lat: 40.760341,
+            lng: -73.978997
+        },
+
+        map: map,
+        title: "Rockefeller Center",
+
+    });
+
+    var contentStringRockefellercenter =
+        '<div id="content_kochi">' +
+        '<div id="siteNotice_kochi">' +
+        '<span id="infowindow_title_kochi">Rockefeller Center</span>' +
+        '<div id="bodyContentkochi">' +
+        "Travel Agency<br/><br/>" +
+        "13 th Street .47 W 13 th St, <br/>" +
+        "New York, NY 10011, USA" +
+        '<div id ="tag_kochi">Great Deals</div>' +
+        '<div id="tag_details">50% off</div>' +
+        '<div id="infowindow_image_kochi"> ' +
+        "<img src='assets/images/tour_nyc_logo.png'>" +
+        "</div>" +
+        "</div>";
+
+    var infowindow_rockefellercenter = new google.maps.InfoWindow({
+        content: contentStringCentralpark,
+        maxwidth: 500,
+    });
+
+    markerRockefellercenter.addListener('click', function() {
+        infowindow_rockefellercenter.open(map, markerRockefellercenter);
+    });
+
+    //Central Park
+    var markerCentralpark = new google.maps.Marker({
+        position: {
+            lat: 40.769349,
+            lng: -73.971969
+        },
+
+        map: map,
+        title: "Central Park",
+
+    });
+
+    var contentStringCentralpark =
+        '<div id="content_kochi">' +
+        '<div id="siteNotice_kochi">' +
+        '<span id="infowindow_title_kochi">Central Park</span>' +
+        '<div id="bodyContentkochi">' +
+        "Travel Agency<br/><br/>" +
+        "13 th Street .47 W 13 th St, <br/>" +
+        "New York, NY 10011, USA" +
+        '<div id ="tag_kochi">Great Deals</div>' +
+        '<div id="tag_details">50% off</div>' +
+        '<div id="infowindow_image_kochi"> ' +
+        "<img src='assets/images/tour_nyc_logo.png'>" +
+        "</div>" +
+        "</div>";
+
+    var infowindow_centralpark = new google.maps.InfoWindow({
+        content: contentStringCentralpark,
+        maxwidth: 500,
+    });
+
+    markerCentralpark.addListener('click', function() {
+        infowindow_centralpark.open(map, markerCentralpark);
+    });
+
+    //Washington Square
+    var markerWashingtonsquare = new google.maps.Marker({
+        position: {
+            lat: 40.732304,
+            lng: -73.997326
+        },
+
+        map: map,
+        title: "Washington Square Park",
+
+    });
+
+    var contentStringWashingtonsquare =
+        '<div id="content_kochi">' +
+        '<div id="siteNotice_kochi">' +
+        '<span id="infowindow_title_kochi">Equinox</span>' +
+        '<div id="bodyContentkochi">' +
+        "Travel Agency<br/><br/>" +
+        "13 th Street .47 W 13 th St, <br/>" +
+        "New York, NY 10011, USA" +
+        '<div id ="tag_kochi">Great Deals</div>' +
+        '<div id="tag_details">50% off</div>' +
+        '<div id="infowindow_image_kochi"> ' +
+        "<img src='assets/images/tour_nyc_logo.png'>" +
+        "</div>" +
+        "</div>";
+
+    var infowindow_washingtonsquare = new google.maps.InfoWindow({
+        content: contentStringWashingtonsquare,
+        maxwidth: 500,
+    });
+
+    markerWashingtonsquare.addListener('click', function() {
+        infowindow_washingtonsquare.open(map, markerWashingtonsquare);
+    });
+
+    //The High Line
+    var markerHighline = new google.maps.Marker({
+        position: {
+            lat: 40.74974,
+            lng: -74.00484
+        },
+
+        map: map,
+        title: "The High Line Park",
+
+    });
+
+    var contentStringHighline =
+        '<div id="content_kochi">' +
+        '<div id="siteNotice_kochi">' +
+        '<span id="infowindow_title_kochi">Equinox</span>' +
+        '<div id="bodyContentkochi">' +
+        "Travel Agency<br/><br/>" +
+        "13 th Street .47 W 13 th St, <br/>" +
+        "New York, NY 10011, USA" +
+        '<div id ="tag_kochi">Great Deals</div>' +
+        '<div id="tag_details">50% off</div>' +
+        '<div id="infowindow_image_kochi"> ' +
+        "<img src='assets/images/tour_nyc_logo.png'>" +
+        "</div>" +
+        "</div>";
+
+    var infowindow_highline = new google.maps.InfoWindow({
+        content: contentStringHighline,
+        maxwidth: 500,
+    });
+
+    markerHighline.addListener('click', function() {
+        infowindow_highline.open(map, markerHighline);
+    });
+
+    //Brooklyn Bridge
+    var markerBrooklynbridge = new google.maps.Marker({
+        position: {
+            lat: 40.707369,
+            lng: -73.99711
+        },
+
+        map: map,
+        title: "Brooklyn Bridge Landmark",
+
+    });
+
+    var contentStringBrooklynbridge =
+        '<div id="content_kochi">' +
+        '<div id="siteNotice_kochi">' +
+        '<span id="infowindow_title_kochi">Equinox</span>' +
+        '<div id="bodyContentkochi">' +
+        "Travel Agency<br/><br/>" +
+        "13 th Street .47 W 13 th St, <br/>" +
+        "New York, NY 10011, USA" +
+        '<div id ="tag_kochi">Great Deals</div>' +
+        '<div id="tag_details">50% off</div>' +
+        '<div id="infowindow_image_kochi"> ' +
+        "<img src='assets/images/tour_nyc_logo.png'>" +
+        "</div>" +
+        "</div>";
+
+    var infowindow_brooklynbridge = new google.maps.InfoWindow({
+        content: contentStringBrooklynbridge,
+        maxwidth: 500,
+    });
+
+    markerBrooklynbridge.addListener('click', function() {
+        infowindow_brooklynbridge.open(map, markerBrooklynbridge);
+    });
+
+    //Hotels
+    //Hyatt
+    var markerHyatt = new google.maps.Marker({
+        position: {
+            lat: 40.766962,
+            lng: -73.9787
+        },
+
+        map: map,
+        title: "Hyatt Hotel",
+
+    });
+
+    var contentStringHyatt =
+        '<div id="content_kochi">' +
+        '<div id="siteNotice_kochi">' +
+        '<span id="infowindow_title_kochi">Equinox</span>' +
+        '<div id="bodyContentkochi">' +
+        "Travel Agency<br/><br/>" +
+        "13 th Street .47 W 13 th St, <br/>" +
+        "New York, NY 10011, USA" +
+        '<div id ="tag_kochi">Great Deals</div>' +
+        '<div id="tag_details">50% off</div>' +
+        '<div id="infowindow_image_kochi"> ' +
+        "<img src='assets/images/tour_nyc_logo.png'>" +
+        "</div>" +
+        "</div>";
+
+    var infowindow_hyatt = new google.maps.InfoWindow({
+        content: contentStringHyatt,
+        maxwidth: 500,
+    });
+
+    markerHyatt.addListener('click', function() {
+        infowindow_hyatt.open(map, markerHyatt);
+    });
+
+    //Aloft
+    var markerAloft = new google.maps.Marker({
+        position: {
+            lat: 40.810721,
+            lng: -73.95192
+        },
+
+        map: map,
+        title: "Aloft Hotel",
+
+    });
+
+    var contentStringAloft =
+        '<div id="content_kochi">' +
+        '<div id="siteNotice_kochi">' +
+        '<span id="infowindow_title_kochi">Equinox</span>' +
+        '<div id="bodyContentkochi">' +
+        "Travel Agency<br/><br/>" +
+        "13 th Street .47 W 13 th St, <br/>" +
+        "New York, NY 10011, USA" +
+        '<div id ="tag_kochi">Great Deals</div>' +
+        '<div id="tag_details">50% off</div>' +
+        '<div id="infowindow_image_kochi"> ' +
+        "<img src='assets/images/tour_nyc_logo.png'>" +
+        "</div>" +
+        "</div>";
+
+    var infowindow_aloft = new google.maps.InfoWindow({
+        content: contentStringAloft,
+        maxwidth: 500,
+    });
+
+    markerAloft.addListener('click', function() {
+        infowindow_aloft.open(map, markerAloft);
+    });
+
+    //Four Seasons
+    var markerFourseasons = new google.maps.Marker({
+        position: {
+            lat: 40.713838,
+            lng: -74.00913
+        },
+
+        map: map,
+        title: "Four Seasons Hotel",
+
+    });
+
+    var contentStringFourseasons =
+        '<div id="content_kochi">' +
+        '<div id="siteNotice_kochi">' +
+        '<span id="infowindow_title_kochi">Equinox</span>' +
+        '<div id="bodyContentkochi">' +
+        "Travel Agency<br/><br/>" +
+        "13 th Street .47 W 13 th St, <br/>" +
+        "New York, NY 10011, USA" +
+        '<div id ="tag_kochi">Great Deals</div>' +
+        '<div id="tag_details">50% off</div>' +
+        '<div id="infowindow_image_kochi"> ' +
+        "<img src='assets/images/tour_nyc_logo.png'>" +
+        "</div>" +
+        "</div>";
+
+    var infowindow_fourseasons = new google.maps.InfoWindow({
+        content: contentStringFourseasons,
+        maxwidth: 500,
+    });
+
+    markerFourseasons.addListener('click', function() {
+        infowindow_fourseasons.open(map, markerFourseasons);
+    });
+
+    //The Dominick
+    var markerDominick = new google.maps.Marker({
+        position: {
+            lat: 40.728444,
+            lng: -74.00522
+        },
+
+        map: map,
+        title: "The Dominick Hotel",
+
+    });
+
+    var contentStringDominick =
+        '<div id="content_kochi">' +
+        '<div id="siteNotice_kochi">' +
+        '<span id="infowindow_title_kochi">Equinox</span>' +
+        '<div id="bodyContentkochi">' +
+        "Travel Agency<br/><br/>" +
+        "13 th Street .47 W 13 th St, <br/>" +
+        "New York, NY 10011, USA" +
+        '<div id ="tag_kochi">Great Deals</div>' +
+        '<div id="tag_details">50% off</div>' +
+        '<div id="infowindow_image_kochi"> ' +
+        "<img src='assets/images/tour_nyc_logo.png'>" +
+        "</div>" +
+        "</div>";
+
+    var infowindow_dominick = new google.maps.InfoWindow({
+        content: contentStringDominick,
+        maxwidth: 500,
+    });
+
+    markerDominick.addListener('click', function() {
+        infowindow_dominick.open(map, markerDominick);
+    });
+
+    //Equinox
+    var markerEquinox = new google.maps.Marker({
+        position: {
+            lat: 40.758046,
+            lng: -74.002015
+        },
+
+        map: map,
+        title: "Equinox Hotel",
+
+    });
+
+    var contentStringEquinox =
+        '<div id="content_kochi">' +
+        '<div id="siteNotice_kochi">' +
+        '<span id="infowindow_title_kochi">Equinox</span>' +
+        '<div id="bodyContentkochi">' +
+        "Travel Agency<br/><br/>" +
+        "13 th Street .47 W 13 th St, <br/>" +
+        "New York, NY 10011, USA" +
+        '<div id ="tag_kochi">Great Deals</div>' +
+        '<div id="tag_details">50% off</div>' +
+        '<div id="infowindow_image_kochi"> ' +
+        "<img src='assets/images/tour_nyc_logo.png'>" +
+        "</div>" +
+        "</div>";
+
+    var infowindow_equinox = new google.maps.InfoWindow({
+        content: contentStringEquinox,
+        maxwidth: 500,
+    });
+
+    markerEquinox.addListener('click', function() {
+        infowindow_equinox.open(map, markerEquinox);
+    });
+
     //Kochi 
     var markerKochi = new google.maps.Marker({
         position: {
