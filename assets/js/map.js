@@ -38,13 +38,19 @@ function initMap() {
         "</div>";
 
     var infowindow_rockefellercenter = new google.maps.InfoWindow({
-        content: contentStringCentralpark,
+        content: contentStringRockefellercenter,
         maxwidth: 500,
     });
 
-    markerRockefellercenter.addListener('click', function() {
+    markerRockefellercenter.addListener('mouseover', function() {
         infowindow_rockefellercenter.open(map, markerRockefellercenter);
     });
+
+    markerRockefellercenter.addListener('mouseout', function() {
+        infowindow_rockefellercenter.close(map, markerRockefellercenter);
+    });
+
+
 
     //Central Park
     var markerCentralpark = new google.maps.Marker({
@@ -78,8 +84,12 @@ function initMap() {
         maxwidth: 500,
     });
 
-    markerCentralpark.addListener('click', function() {
+    markerCentralpark.addListener('mouseover', function() {
         infowindow_centralpark.open(map, markerCentralpark);
+    });
+
+    markerCentralpark.addListener('mouseout', function() {
+        infowindow_centralpark.close(map, markerCentralpark);
     });
 
     //Washington Square
@@ -114,8 +124,12 @@ function initMap() {
         maxwidth: 500,
     });
 
-    markerWashingtonsquare.addListener('click', function() {
+    markerWashingtonsquare.addListener('mouseover', function() {
         infowindow_washingtonsquare.open(map, markerWashingtonsquare);
+    });
+
+    markerWashingtonsquare.addListener('mouseout', function() {
+        infowindow_washingtonsquare.close(map, markerWashingtonsquare);
     });
 
     //The High Line
@@ -150,8 +164,12 @@ function initMap() {
         maxwidth: 500,
     });
 
-    markerHighline.addListener('click', function() {
+    markerHighline.addListener('mouseover', function() {
         infowindow_highline.open(map, markerHighline);
+    });
+
+    markerHighline.addListener('mouseout', function() {
+        infowindow_highline.close(map, markerHighline);
     });
 
     //Brooklyn Bridge
@@ -186,8 +204,12 @@ function initMap() {
         maxwidth: 500,
     });
 
-    markerBrooklynbridge.addListener('click', function() {
+    markerBrooklynbridge.addListener('mouseover', function() {
         infowindow_brooklynbridge.open(map, markerBrooklynbridge);
+    });
+
+    markerBrooklynbridge.addListener('mouseout', function() {
+        infowindow_brooklynbridge.close(map, markerBrooklynbridge);
     });
 
     //Hotels
@@ -223,8 +245,12 @@ function initMap() {
         maxwidth: 500,
     });
 
-    markerHyatt.addListener('click', function() {
+    markerHyatt.addListener('mouseover', function() {
         infowindow_hyatt.open(map, markerHyatt);
+    });
+
+    markerHyatt.addListener('mouseout', function() {
+        infowindow_hyatt.close(map, markerHyatt);
     });
 
     //Aloft
@@ -259,8 +285,12 @@ function initMap() {
         maxwidth: 500,
     });
 
-    markerAloft.addListener('click', function() {
+    markerAloft.addListener('mouseover', function() {
         infowindow_aloft.open(map, markerAloft);
+    });
+
+    markerAloft.addListener('mouseout', function() {
+        infowindow_aloft.close(map, markerAloft);
     });
 
     //Four Seasons
@@ -295,8 +325,12 @@ function initMap() {
         maxwidth: 500,
     });
 
-    markerFourseasons.addListener('click', function() {
+    markerFourseasons.addListener('mouseover', function() {
         infowindow_fourseasons.open(map, markerFourseasons);
+    });
+
+    markerFourseasons.addListener('mouseout', function() {
+        infowindow_fourseasons.close(map, markerFourseasons);
     });
 
     //The Dominick
@@ -331,9 +365,14 @@ function initMap() {
         maxwidth: 500,
     });
 
-    markerDominick.addListener('click', function() {
+    markerDominick.addListener('mouseover', function() {
         infowindow_dominick.open(map, markerDominick);
     });
+
+    markerDominick.addListener('mouseout', function() {
+        infowindow_dominick.close(map, markerDominick);
+    });
+
 
     //Equinox
     var markerEquinox = new google.maps.Marker({
@@ -367,8 +406,12 @@ function initMap() {
         maxwidth: 500,
     });
 
-    markerEquinox.addListener('click', function() {
+    markerEquinox.addListener('mouseover', function() {
         infowindow_equinox.open(map, markerEquinox);
+    });
+
+    markerEquinox.addListener('mouseout', function() {
+        infowindow_equinox.close(map, markerEquinox);
     });
 
     //Kochi 
@@ -402,8 +445,12 @@ function initMap() {
         maxwidth: 500,
     });
 
-    markerKochi.addListener('click', function() {
+    markerKochi.addListener('mouseover', function() {
         infowindow_kochi.open(map, markerKochi);
+    });
+
+    markerKochi.addListener('mouseout', function() {
+        infowindow_kochi.close(map, markerKochi);
     });
 
     //Le Bernardin
@@ -436,8 +483,12 @@ function initMap() {
         maxwidth: 500,
     });
 
-    markerBernardin.addListener('click', function() {
+    markerBernardin.addListener('mouseover', function() {
         infowindowBernardin.open(map, markerBernardin);
+    });
+
+    markerBernardin.addListener('mouseout', function() {
+        infowindowBernardin.close(map, markerBernardin);
     });
 
     //Le Cilantro
@@ -471,8 +522,12 @@ function initMap() {
         maxwidth: 500,
     });
 
-    markerCilantro.addListener('click', function() {
+    markerCilantro.addListener('mouseover', function() {
         infowindowCilantro.open(map, markerCilantro);
+    });
+
+    markerCilantro.addListener('mouseout', function() {
+        infowindowCilantro.close(map, markerCilantro);
     });
 
     //212 Steakhouse
@@ -506,8 +561,12 @@ function initMap() {
         maxwidth: 500,
     });
 
-    markerSteakhouse.addListener('click', function() {
+    markerSteakhouse.addListener('mouseover', function() {
         infowindowSteakhouse.open(map, markerSteakhouse);
+    });
+
+    markerSteakhouse.addListener('mouseout', function() {
+        infowindowSteakhouse.close(map, markerSteakhouse);
     });
 
     //Thai Villa 
@@ -541,8 +600,12 @@ function initMap() {
         maxwidth: 500,
     });
 
-    markerThaivilla.addListener('click', function() {
+    markerThaivilla.addListener('mouseover', function() {
         infowindowThaivilla.open(map, markerThaivilla);
+    });
+
+    markerThaivilla.addListener('mouseout', function() {
+        infowindowThaivilla.close(map, markerThaivilla);
     });
 
 }
@@ -591,5 +654,9 @@ function initFooterMap() {
 
     marker.addListener('mouseover', () => {
         infowindow.open(map, marker);
+    });
+
+    marker.addListener('mouseout', () => {
+        infowindow.close(map, marker);
     });
 }
