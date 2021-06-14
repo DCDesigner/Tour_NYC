@@ -672,6 +672,10 @@
             <div class="col">
                 <div id="footer_logo"><img src="assets/images/tour_nyc_logo.png" class="footer_logo" alt="Tour NYC Travel Agency logo">
                     <div id="footerlogo_text">Tour NYC</div>
+                    <form id="contactForm" class="newsletter" onsubmit="return sendMail(this);">
+                        <input type="email" name="email" id="emailaddress" placeholder="Email Address" class="form-control" required="">
+                        <button type="submit" id="send-button" class="newsletter" aria-label="send button"><i class="far fa-paper-plane"></i></button>
+                    </form>
                 </div>
             </div>
             <div class="col">
@@ -706,6 +710,8 @@
             <div class="col copyright">© 2021 Tour NYC, Inc. All rights reserved No part of this site may be reproduced without our written permission.</div>
         </div>
     </section>
+    <!-- Scripts -->
+
     <!--<button class="btn purple-gradient mr-auto waves-effect waves-light show" id="back-to-top">TOP</button> -->
     <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-arrow-alt-circle-up"></i></button>
     <!-- Bootstrap Bundle with Popper -->
@@ -720,6 +726,42 @@
     <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
     <!-- Scroll To Top Button -->
     <script src="assets/js/button.js"></script>
+    <!-- email -->
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+    <script src="/assets/js/email.js"></script>
+    <!-- Emailjs -->
+    <script>
+        (function() {
+            emailjs.init("user_bb4xdCXZSX4M89EM712oR");
+        })();
+    </script>
+    <!-- swal newsletter message -->
+    <div class="swal-overlay swal-overlay--show-modal" tabindex="-1">
+        <div class="swal-modal" role="dialog" aria-modal="true">
+            <div class="swal-icon swal-icon--success">
+                <span class="swal-icon--success__line swal-icon--success__line--long"></span>
+                <span class="swal-icon--success__line swal-icon--success__line--tip"></span>
+
+                <div class="swal-icon--success__ring"></div>
+                <div class="swal-icon--success__hide-corners"></div>
+            </div>
+            <div class="swal-title" style="">Thanks for signing up!</div>
+            <div class="swal-text" style="">You'll now start recieving our weekly newsletter</div>
+            <div class="swal-footer">
+                <div class="swal-button-container">
+
+                    <button class="swal-button swal-button--confirm">Done</button>
+
+                    <div class="swal-button__loader">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
