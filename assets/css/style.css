@@ -318,6 +318,27 @@ button#send-button.newsletter {
     cursor: pointer;
 }
 
+.swal-overlay--show-modal {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.swal-overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-size: 0;
+    overflow-y: auto;
+    background-color: rgba(0, 0, 0, .4);
+    z-index: 10000;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity .3s;
+}
+
 #address {
     color: white;
     font-family: 'Fredoka One', cursive;
