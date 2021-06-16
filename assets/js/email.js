@@ -13,7 +13,7 @@ function sendMail(contactForm) {
         })
         .then(
             function() {
-                Swal.fire({
+                swal({
                     title: "Thanks for signing up!",
                     text: "You'll now start recieving our weekly newsletter",
                     icon: "success",
@@ -21,7 +21,7 @@ function sendMail(contactForm) {
                 });
             },
             function(error) {
-                Swal.fire({
+                swal({
                     title: "Oops, it looks like something went wrong.",
                     text: "Please try again",
                     icon: "error",
