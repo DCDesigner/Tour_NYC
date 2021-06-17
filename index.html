@@ -15,9 +15,6 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!-- font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" type="text/css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" type="text/css">
 </head>
 
 <body onload="initMap(); initFooterMap();">
@@ -675,10 +672,6 @@
             <div class="col">
                 <div id="footer_logo"><img src="assets/images/tour_nyc_logo.png" class="footer_logo" alt="Tour NYC Travel Agency logo">
                     <div id="footerlogo_text">Tour NYC</div>
-                    <form id="contactForm" class="newsletter" onsubmit="return sendMail(this);">
-                        <input type="email" name="email" id="emailaddress" placeholder="Email Address" class="form-control" required="">
-                        <button type="submit" id="send-button" class="newsletter" aria-label="send button"><i class="far fa-paper-plane"></i></button>
-                    </form>
                 </div>
             </div>
             <div class="col">
@@ -729,45 +722,6 @@
     <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
     <!-- Scroll To Top Button -->
     <script src="assets/js/button.js"></script>
-    <!-- emailNewsletter -->
-    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
-    <script src="assets/js/email.js"></script>
-    <!-- sweatalert2 -->
-    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-
-    <script></script>
-    <div class="sidenav-overlay"></div>
-    <div class="drag-target right-aligned"></div>
-    <div class="swal-overlay" tabindex="-1">
-        <div class="swal-modal" role="dialog" aria-modal="true">
-            <div class="swal-icon swal-icon--success">
-                <span class="swal-icon--success__line swal-icon--success__line--long"></span>
-                <span class="swal-icon--success__line swal-icon--success__line--tip"></span>
-
-                <div class="swal-icon--success__ring"></div>
-                <div class="swal-icon--success__hide-corners"></div>
-            </div>
-            <div class="swal-title">Thanks for signing up!</div>
-            <div class="swal-text">You'll now start recieving our weekly newsletter</div>
-            <div class="swal-footer">
-                <div class="swal-button-container">
-
-                    <button class="swal-button swal-button--confirm">Done</button>
-
-                    <div class="swal-button__loader">
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-    </div>
 </body>
-
-</html>
 
 </html>
