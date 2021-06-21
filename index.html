@@ -15,6 +15,13 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!-- font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+    <script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.2.4/email.min.js"></script>
+    <!-- email js -->
+    <script type="text/javascript">
+        (function() {
+            emailjs.init("user_PisMKJDTsgwTMDGU6qDdp");
+        })();
+    </script>
 </head>
 
 <body onload="initMap(); initFooterMap();">
@@ -26,10 +33,7 @@
                     <img class="d-block w-100" src="assets/images/NYC_Skyscrapper_cropped1.png" alt="First slide">
                 </div>
                 <div class="carousel-item" data-interval="500">
-                    <img class="d-block w-100" src="assets/images/brooklyn_pier.png" alt="Second slide">
-                </div>
-                <div class="carousel-item" data-interval="500">
-                    <img class="d-block w-100" src="assets/images/NYC_Skyscrapper.png" alt="Third slide">
+                    <img class="d-block w-100" src="assets/images/brooklyn_pier_cropped.png" alt="Second slide">
                 </div>
             </div>
         </div>
@@ -702,6 +706,9 @@
             <div class="col">
                 <div id="FooterMap"></div>
             </div>
+            <!-- Contact Us Popup form -->
+            <button type="button" class="btn btn-secondary" data-toggle="popover" title="Contact Us Form">Contact Us</button>
+
             <div class="row"></div>
             <div class="col copyright">© 2021 Tour NYC, Inc. All rights reserved No part of this site may be reproduced without our written permission.</div>
         </div>
@@ -718,10 +725,38 @@
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCHTSM6aKi3_O3oY63zun4k_IB9ycoo4v8"></script>
     <!-- google maps -->
     <script src="assets/js/map.js"></script>
-
     <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
     <!-- Scroll To Top Button -->
     <script src="assets/js/button.js"></script>
-</body>
+    <!-- contact popup form Button credits https://getbootstrap.com/docs/5.0/components/popovers/ & https://stackoverflow.com/questions/55791417/bootstrap-4-input-field-in-popover-->
+    <script>
+        const popover = new bootstrap.Popover(document.querySelector('[data-toggle="popover"]'), {
+            container: 'body',
+            title: 'Search',
+            html: true,
+            placement: 'bottom',
+            sanitize: false,
+            content: `<div id="PopoverContent">
+                <form>
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label"></label>
+    <input type="email" class="form-control" placeholder="Email" id="exampleInputEmail1" aria-describedby="emailHelp">
+  
+    <label for="name" class="form-label"></label>
+    <input type="text" class="form-control" placeholder="name" aria-label="name">
+ 
+    <label for="subject" class="form-label"></label>
+    <input type="text" class="form-control" placeholder="Subject" aria-label="subject">
+
+    <textarea rows="4" cols="36" name="comment" placeholder="Type Message Here" class="form-control"></textarea>
+
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+    </div>`
+        })
+    </script>
+
+
+</html>
 
 </html>
