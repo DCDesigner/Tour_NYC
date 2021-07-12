@@ -728,6 +728,8 @@
     <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
     <!-- Scroll To Top Button -->
     <script src="assets/js/button.js"></script>
+    <!-- sendmail() function -->
+    <script src="assets/js/sendEmail.js"></script>
     <!-- contact popup form Button credits https://getbootstrap.com/docs/5.0/components/popovers/ & https://stackoverflow.com/questions/55791417/bootstrap-4-input-field-in-popover-->
     <script>
         const popover = new bootstrap.Popover(document.querySelector('[data-toggle="popover"]'), {
@@ -737,7 +739,7 @@
             placement: 'bottom',
             sanitize: false,
             content: `<div id="PopoverContent">
-                <form>
+                <form onsubmit="return sendMail(this);">
   <div class="mb-3">
     <label for="exampleInputEmail1" class="form-label"></label>
     <input type="email" class="form-control" placeholder="Email" id="exampleInputEmail1" aria-describedby="emailHelp">
@@ -755,8 +757,5 @@
     </div>`
         })
     </script>
-
-
-</html>
 
 </html>
