@@ -228,6 +228,10 @@ div.video-content {
     color: #fff;
 }
 
+.choices a:hover {
+    color: #fff;
+}
+
 div#map {
     /* min-height: 360px; */
     min-height: 490px;
@@ -513,9 +517,24 @@ textarea.form-control {
     margin-top: 20px !important;
 }
 
-.btn-primary {
+button.btn.btn-primary {
     color: #fff;
-    background-color: #0d6efd;
-    border-color: #0d6efd;
+    background-color: #faa21a;
     margin-top: 20px !important;
+}
+
+button.btn.btn-primary:hover {
+    color: #fff;
+    background-color: #faa21a;
+    margin-top: 20px !important;
+}
+
+/* Contact Form */
+
+h3.popover-header {
+    background-color: #faa21a !important;
+}
+
+div.popover-body {
+    background-color: #474ea1 !important;
 }

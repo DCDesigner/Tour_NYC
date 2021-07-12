@@ -739,18 +739,18 @@
             placement: 'bottom',
             sanitize: false,
             content: `<div id="PopoverContent">
-                <form onsubmit="return sendMail(this);">
+                <form onsubmit="return sendMail(event, this);">
   <div class="mb-3">
     <label for="exampleInputEmail1" class="form-label"></label>
-    <input type="email" class="form-control" placeholder="Email" id="exampleInputEmail1" aria-describedby="emailHelp">
+    <input type="email" name="email" class="form-control" placeholder="Email" id="exampleInputEmail1" aria-describedby="emailHelp">
   
     <label for="name" class="form-label"></label>
-    <input type="text" class="form-control" placeholder="name" aria-label="name">
- 
-    <label for="subject" class="form-label"></label>
-    <input type="text" class="form-control" placeholder="Subject" aria-label="subject">
+    <input type="text" name="fullname" class="form-control" placeholder="name" aria-label="name">
 
-    <textarea rows="4" cols="36" name="comment" placeholder="Type Message Here" class="form-control"></textarea>
+    <label for="subject" class="form-label"></label>
+    <input type="text" name="subject" class="form-control" placeholder="Subject" aria-label="subject">
+
+    <textarea rows="4" cols="36" name="message" placeholder="Type Message Here" class="form-control"></textarea>
 
   <button type="submit" class="btn btn-primary">Submit</button>
 </form>

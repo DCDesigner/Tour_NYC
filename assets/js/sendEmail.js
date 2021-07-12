@@ -1,9 +1,16 @@
-function sendMail(contactForm) {
-    emailjs.send("gmail", "Tour_NYC", {
-            "from_name": contactForm.name.value,
-            "from_email": contactForm.emailaddress.value,
-            "project_request": contactForm.projectsummary.value
-        })
+function sendMail(event, contactForm) {
+    event.preventDefault()
+
+    const data = {
+        from_name: event.target.fullname.value,
+        from_email: event.target.email.value,
+        subject: event.target.subject.value,
+        message: event.target.message.value,
+    }
+
+    // console.log(data)
+
+    emailjs.send("service_2r9e394", "Tour_NYC", data)
         .then(
             function(response) {
                 console.log("SUCCESS", response);
@@ -12,5 +19,5 @@ function sendMail(contactForm) {
                 console.log("FAILED", error);
             }
         );
-    return false; // To block from loading a new page
+
 }
