@@ -1,5 +1,39 @@
 // The following example creates five accessible and
 // focusable markers.
+
+var map;
+var markers = [];
+
+
+const hotelMarkers = []
+
+
+const restaurantMarkers = []
+
+
+const attractionMarkers = [{
+        position: {
+            lat: 40.760341,
+            lng: -73.978997
+        },
+        contentString: '<div id="content_kochi">' +
+            '<div id="siteNotice_kochi">' +
+            '<span id="infowindow_title_kochi">Rockefeller Center</span>' +
+            '<div id="bodyContentkochi">' +
+            "Travel Agency<br/><br/>" +
+            "13 th Street .47 W 13 th St, <br/>" +
+            "New York, NY 10011, USA" +
+            '<div id ="tag_kochi">Great Deals</div>' +
+            '<div id="tag_details">50% off</div>' +
+            '<div id="infowindow_image_kochi"> ' +
+            "<img src='assets/images/tour_nyc_logo.png'>" +
+            "</div>" +
+            "</div>",
+        icon: `<i class="fas fa-hotel"></i>`
+    },
+
+]
+
 function initMap() {
     const map = new google.maps.Map(document.getElementById("map"), {
         zoom: 12,
@@ -8,6 +42,10 @@ function initMap() {
             lng: -73.996238
         },
     });
+
+    // loop
+
+    // createMarkers
 
     //Attractions
     //Rockefeller Center
@@ -18,6 +56,7 @@ function initMap() {
         },
 
         map: map,
+
         title: "Rockefeller Center",
 
     });
@@ -268,16 +307,14 @@ function initMap() {
     var contentStringAloft =
         '<div id="content_kochi">' +
         '<div id="siteNotice_kochi">' +
-        '<span id="infowindow_title_kochi">Equinox</span>' +
-        '<div id="bodyContentkochi">' +
-        "Travel Agency<br/><br/>" +
-        "13 th Street .47 W 13 th St, <br/>" +
-        "New York, NY 10011, USA" +
-        '<div id ="tag_kochi">Great Deals</div>' +
+        '<span id="infowindow_title">Aloft</span>' +
+        '<div id="bodyContent">' +
+        "4-star hotel<br/>" +
+        "Free Wifi<br/><br/>" +
+        "2296 Frederick Douglass Blvd, <br/>" +
+        "New York, NY 10027, USA" +
+        '<div id ="tag">Great Deals</div>' +
         '<div id="tag_details">50% off</div>' +
-        '<div id="infowindow_image_kochi"> ' +
-        "<img src='assets/images/tour_nyc_logo.png'>" +
-        "</div>" +
         "</div>";
 
     var infowindow_aloft = new google.maps.InfoWindow({
@@ -506,16 +543,16 @@ function initMap() {
     var contentStringCilantro =
         '<div id="content_Cilantro">' +
         '<div id="siteNotice_Cilantro">' +
-        '<span id="infowindow_title_Cilantro">Cilantro</span>' +
+        '<span id="infowindow_title">Cilantro</span>' +
         '<div id="bodyContentcilantro">' +
-        "Restaurant<br/><br/>" +
-        "13 th Street .47 W 13 th St, <br/>" +
-        "New York, NY 10011, USA" +
-        '<div id ="tag_kochi">Great Deals</div>' +
-        '<div id="tag_details">50% off</div>' +
-        '<div id="infowindow_image_kochi"> ' +
-        "<img src='assets/images/tour_nyc_logo.png'>" +
-        "</div>" +
+        "$$ Mexican Restaurant<br/><br/>" +
+        "485 Columbus Ave, <br/>" +
+        "New York, NY 10024, USA <br/><br/>" +
+        '<ul id ="eatingtags">' +
+        '<li><i class="fa-li fa fa-check-square"></i>Dine-in</li>' +
+        '<li>Curbside Pickup</li>' +
+        '<li>Delivery</li>' +
+        '</ul>' +
         "</div>";
     var infowindowCilantro = new google.maps.InfoWindow({
         content: contentStringCilantro,

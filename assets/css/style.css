@@ -35,7 +35,7 @@ div#logo_text {
     color: #033824;
     font-size: 42px;
     font-family: 'Fredoka One', cursive;
-    margin-left: 45px;
+    margin-left: 53px;
 }
 
 ul.navbar-nav {
@@ -129,6 +129,8 @@ a.btn.btn-success.btn-rounded {
     font-size: 57px;
     font-family: 'Fredoka One';
     line-height: 71px;
+    background-color: #26b57f7a;
+    padding: 20px;
 }
 
 /* Second navigation*/
@@ -176,7 +178,7 @@ ul.nav.justify-content-center {
     text-align: center;
     width: 100%;
     font-size: 55px;
-    margin-top: 42px;
+    margin-top: 100px;
     color: white !important;
 }
 
@@ -215,17 +217,17 @@ div.video-content {
 }
 
 .choices {
-    background-color: #474ea1;
+    background-color: #033824;
     width: 100%;
     min-height: 100px;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #fff;
 }
 
 .choices a {
     color: #fff;
+    text-decoration: none;
 }
 
 .choices a:hover {
@@ -237,19 +239,19 @@ div#map {
     min-height: 490px;
 }
 
-#infowindow_title_kochi {
+#infowindow_title {
     font-size: 15px;
     font-weight: bold;
 
 }
 
-#infowindow_image_kochi {
+#infowindow_image {
     top: 8px;
     position: absolute;
     left: 165px;
 }
 
-#infowindowtags-kochi {
+#infowindowtags {
     display: flex;
     flex-wrap: wrap;
     height: max-content;
@@ -258,7 +260,7 @@ div#map {
     max-width: 250px;
 }
 
-#tag_kochi {
+#tag {
     font-size: 12px;
     background-color: #fed326;
     color: #060606;
@@ -285,6 +287,11 @@ div#map {
     left: 86px;
 }
 
+
+
+ul#eatingtags li {
+    display: inline;
+}
 
 #contact {
     background-color: #033824;
@@ -536,5 +543,9 @@ h3.popover-header {
 }
 
 div.popover-body {
+    background-color: #474ea1 !important;
+}
+
+iv.popover-body {
     background-color: #474ea1 !important;
 }
