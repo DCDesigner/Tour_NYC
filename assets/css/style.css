@@ -207,13 +207,17 @@ a#scrolldown.scrolldown {
 }
 
 #aboutNYC-text {
-    margin-top: 54px;
     padding-right: 32px;
     margin-bottom: 54px;
 }
 
 div.video-content {
     margin-top: 63px;
+}
+
+div.col-4{
+    margin-bottom: 50px !important;
+    margin-top: 50px !important;
 }
 
 .choices {

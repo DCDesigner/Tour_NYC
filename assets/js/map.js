@@ -64,16 +64,11 @@ function initMap() {
     var contentStringRockefellercenter =
         '<div id="content_kochi">' +
         '<div id="siteNotice_kochi">' +
-        '<span id="infowindow_title_kochi">Rockefeller Center</span>' +
+        '<span id="infowindow_title">Rockefeller Center</span>' +
         '<div id="bodyContentkochi">' +
-        "Travel Agency<br/><br/>" +
-        "13 th Street .47 W 13 th St, <br/>" +
+        "Attraction<br/><br/>" +
+        "45 Rockefeller Plaza, <br/>" +
         "New York, NY 10011, USA" +
-        '<div id ="tag_kochi">Great Deals</div>' +
-        '<div id="tag_details">50% off</div>' +
-        '<div id="infowindow_image_kochi"> ' +
-        "<img src='assets/images/tour_nyc_logo.png'>" +
-        "</div>" +
         "</div>";
 
     var infowindow_rockefellercenter = new google.maps.InfoWindow({
@@ -106,16 +101,11 @@ function initMap() {
     var contentStringCentralpark =
         '<div id="content_kochi">' +
         '<div id="siteNotice_kochi">' +
-        '<span id="infowindow_title_kochi">Central Park</span>' +
+        '<span id="infowindow_title">Central Park</span>' +
         '<div id="bodyContentkochi">' +
-        "Travel Agency<br/><br/>" +
-        "13 th Street .47 W 13 th St, <br/>" +
-        "New York, NY 10011, USA" +
-        '<div id ="tag_kochi">Great Deals</div>' +
-        '<div id="tag_details">50% off</div>' +
-        '<div id="infowindow_image_kochi"> ' +
-        "<img src='assets/images/tour_nyc_logo.png'>" +
-        "</div>" +
+        "Park<br/><br/>" +
+        "767 5th Ave, <br/>" +
+        "New York, NY 10153, USA" +
         "</div>";
 
     var infowindow_centralpark = new google.maps.InfoWindow({
@@ -146,16 +136,11 @@ function initMap() {
     var contentStringWashingtonsquare =
         '<div id="content_kochi">' +
         '<div id="siteNotice_kochi">' +
-        '<span id="infowindow_title_kochi">Equinox</span>' +
+        '<span id="infowindow_title">Washington Square Park</span>' +
         '<div id="bodyContentkochi">' +
-        "Travel Agency<br/><br/>" +
+        "Park<br/><br/>" +
         "13 th Street .47 W 13 th St, <br/>" +
         "New York, NY 10011, USA" +
-        '<div id ="tag_kochi">Great Deals</div>' +
-        '<div id="tag_details">50% off</div>' +
-        '<div id="infowindow_image_kochi"> ' +
-        "<img src='assets/images/tour_nyc_logo.png'>" +
-        "</div>" +
         "</div>";
 
     var infowindow_washingtonsquare = new google.maps.InfoWindow({
@@ -186,16 +171,11 @@ function initMap() {
     var contentStringHighline =
         '<div id="content_kochi">' +
         '<div id="siteNotice_kochi">' +
-        '<span id="infowindow_title_kochi">Equinox</span>' +
+        '<span id="infowindow_title">The High Line Park</span>' +
         '<div id="bodyContentkochi">' +
-        "Travel Agency<br/><br/>" +
-        "13 th Street .47 W 13 th St, <br/>" +
-        "New York, NY 10011, USA" +
-        '<div id ="tag_kochi">Great Deals</div>' +
-        '<div id="tag_details">50% off</div>' +
-        '<div id="infowindow_image_kochi"> ' +
-        "<img src='assets/images/tour_nyc_logo.png'>" +
-        "</div>" +
+        "Promenade Park<br/><br/>" +
+        "820 Washington St, <br/>" +
+        "New York, NY 10014, USA" +
         "</div>";
 
     var infowindow_highline = new google.maps.InfoWindow({
@@ -226,16 +206,11 @@ function initMap() {
     var contentStringBrooklynbridge =
         '<div id="content_kochi">' +
         '<div id="siteNotice_kochi">' +
-        '<span id="infowindow_title_kochi">Equinox</span>' +
+        '<span id="infowindow_title">Brooklyn Bridge Landmark</span>' +
         '<div id="bodyContentkochi">' +
-        "Travel Agency<br/><br/>" +
-        "13 th Street .47 W 13 th St, <br/>" +
-        "New York, NY 10011, USA" +
-        '<div id ="tag_kochi">Great Deals</div>' +
-        '<div id="tag_details">50% off</div>' +
-        '<div id="infowindow_image_kochi"> ' +
-        "<img src='assets/images/tour_nyc_logo.png'>" +
-        "</div>" +
+        "Landmark - Attraction<br/><br/>" +
+        " Brooklyn Bridge Promenade, Centre St, <br/>" +
+        "New York, NY 10001, USA" +
         "</div>";
 
     var infowindow_brooklynbridge = new google.maps.InfoWindow({
@@ -267,16 +242,11 @@ function initMap() {
     var contentStringHyatt =
         '<div id="content_kochi">' +
         '<div id="siteNotice_kochi">' +
-        '<span id="infowindow_title_kochi">Equinox</span>' +
+        '<span id="infowindow_title">Park Hyatt Hotel</span>' +
         '<div id="bodyContentkochi">' +
-        "Travel Agency<br/><br/>" +
-        "13 th Street .47 W 13 th St, <br/>" +
-        "New York, NY 10011, USA" +
-        '<div id ="tag_kochi">Great Deals</div>' +
-        '<div id="tag_details">50% off</div>' +
-        '<div id="infowindow_image_kochi"> ' +
-        "<img src='assets/images/tour_nyc_logo.png'>" +
-        "</div>" +
+        "5 star Hotel<br/><br/>" +
+        "153 W 57th St, <br/>" +
+        "New York, NY 10019, USA" +
         "</div>";
 
     var infowindow_hyatt = new google.maps.InfoWindow({
@@ -345,16 +315,12 @@ function initMap() {
     var contentStringFourseasons =
         '<div id="content_kochi">' +
         '<div id="siteNotice_kochi">' +
-        '<span id="infowindow_title_kochi">Equinox</span>' +
+        '<span id="infowindow_title">Four Seasons Hotel</span>' +
         '<div id="bodyContentkochi">' +
-        "Travel Agency<br/><br/>" +
-        "13 th Street .47 W 13 th St, <br/>" +
-        "New York, NY 10011, USA" +
-        '<div id ="tag_kochi">Great Deals</div>' +
-        '<div id="tag_details">50% off</div>' +
-        '<div id="infowindow_image_kochi"> ' +
-        "<img src='assets/images/tour_nyc_logo.png'>" +
-        "</div>" +
+        "5 star Hotel<br/><br/>" +
+        "Free Wifi<br/><br/>" +
+        "27 Barclay St, <br/>" +
+        "New York, NY 10007, USA" +
         "</div>";
 
     var infowindow_fourseasons = new google.maps.InfoWindow({
@@ -385,16 +351,12 @@ function initMap() {
     var contentStringDominick =
         '<div id="content_kochi">' +
         '<div id="siteNotice_kochi">' +
-        '<span id="infowindow_title_kochi">Equinox</span>' +
+        '<span id="infowindow_title">The Dominick Hotel</span>' +
         '<div id="bodyContentkochi">' +
-        "Travel Agency<br/><br/>" +
-        "13 th Street .47 W 13 th St, <br/>" +
-        "New York, NY 10011, USA" +
-        '<div id ="tag_kochi">Great Deals</div>' +
-        '<div id="tag_details">50% off</div>' +
-        '<div id="infowindow_image_kochi"> ' +
-        "<img src='assets/images/tour_nyc_logo.png'>" +
-        "</div>" +
+        "5 star Hotel<br/><br/>" +
+        "Free Wifi<br/><br/>" +
+        "246 Spring St, <br/>" +
+        "New York, NY 10013, USA" +
         "</div>";
 
     var infowindow_dominick = new google.maps.InfoWindow({
@@ -426,16 +388,12 @@ function initMap() {
     var contentStringEquinox =
         '<div id="content_kochi">' +
         '<div id="siteNotice_kochi">' +
-        '<span id="infowindow_title_kochi">Equinox</span>' +
+        '<span id="infowindow_title">Equinox</span>' +
         '<div id="bodyContentkochi">' +
-        "Travel Agency<br/><br/>" +
-        "13 th Street .47 W 13 th St, <br/>" +
-        "New York, NY 10011, USA" +
-        '<div id ="tag_kochi">Great Deals</div>' +
-        '<div id="tag_details">50% off</div>' +
-        '<div id="infowindow_image_kochi"> ' +
-        "<img src='assets/images/tour_nyc_logo.png'>" +
-        "</div>" +
+        "5 star Hotel<br/><br/>" +
+        "Free Wifi<br/><br/>" +
+        "32 Hudson Yards, <br/>" +
+        "New York, NY 10001, USA" +
         "</div>";
 
     var infowindow_equinox = new google.maps.InfoWindow({
@@ -465,16 +423,11 @@ function initMap() {
     var contentStringKochi =
         '<div id="content_kochi">' +
         '<div id="siteNotice_kochi">' +
-        '<span id="infowindow_title_kochi">Tour NYC</span>' +
+        '<span id="infowindow_title">Kochi</span>' +
         '<div id="bodyContentkochi">' +
-        "Travel Agency<br/><br/>" +
-        "13 th Street .47 W 13 th St, <br/>" +
-        "New York, NY 10011, USA" +
-        '<div id ="tag_kochi">Great Deals</div>' +
-        '<div id="tag_details">50% off</div>' +
-        '<div id="infowindow_image_kochi"> ' +
-        "<img src='assets/images/tour_nyc_logo.png'>" +
-        "</div>" +
+        "Korean Restaurant<br/><br/>" +
+        "652 10th Ave, <br/>" +
+        "New York, NY 10036, USA" +
         "</div>";
 
     var infowindow_kochi = new google.maps.InfoWindow({
@@ -504,16 +457,11 @@ function initMap() {
     var contentStringBernardin =
         '<div id="content_bernardin">' +
         '<div id="siteNotice_bernardin">' +
-        '<span id="infowindow_title_bernardin">Le Bernardin</span>' +
+        '<span id="infowindow_title">Le Bernardin</span>' +
         '<div id="bodyContentbernardin">' +
-        "Restaurant<br/><br/>" +
-        "13 th Street .47 W 13 th St, <br/>" +
-        "New York, NY 10011, USA" +
-        '<div id ="tag_kochi">Great Deals</div>' +
-        '<div id="tag_details">50% off</div>' +
-        '<div id="infowindow_image_kochi"> ' +
-        "<img src='assets/images/tour_nyc_logo.png'>" +
-        "</div>" +
+        "$$$$ French Restaurant<br/><br/>" +
+        "155 W 51st St, <br/>" +
+        "New York, NY 10019, USA" +
         "</div>";
     var infowindowBernardin = new google.maps.InfoWindow({
         content: contentStringBernardin,
@@ -582,16 +530,11 @@ function initMap() {
     var contentStringSteakhouse =
         '<div id="content_Steakhouse">' +
         '<div id="siteNotice_Steakhouse">' +
-        '<span id="infowindow_title_">Steakhouse</span>' +
+        '<span id="infowindow_title">212 Steakhouse</span>' +
         '<div id="bodyContentSteakhouse">' +
-        "Restaurant<br/><br/>" +
-        "13 th Street .47 W 13 th St, <br/>" +
-        "New York, NY 10011, USA" +
-        '<div id ="tag_kochi">Great Deals</div>' +
-        '<div id="tag_details">50% off</div>' +
-        '<div id="infowindow_image_kochi"> ' +
-        "<img src='assets/images/tour_nyc_logo.png'>" +
-        "</div>" +
+        "$$ American Restaurant<br/><br/>" +
+        "316 E 53rd St, <br/>" +
+        "New York, NY  10022, USA" +
         "</div>";
     var infowindowSteakhouse = new google.maps.InfoWindow({
         content: contentStringSteakhouse,
@@ -621,16 +564,11 @@ function initMap() {
     var contentStringThaivilla =
         '<div id="content_Thaivilla">' +
         '<div id="siteNotice_Thaivilla">' +
-        '<span id="infowindow_title_">Thai Villa</span>' +
+        '<span id="infowindow_title">Thai Villa</span>' +
         '<div id="bodyContentThaivilla">' +
-        "Restaurant<br/><br/>" +
-        "13 th Street .47 W 13 th St, <br/>" +
-        "New York, NY 10011, USA" +
-        '<div id ="tag_kochi">Great Deals</div>' +
-        '<div id="tag_details">50% off</div>' +
-        '<div id="infowindow_image_kochi"> ' +
-        "<img src='assets/images/tour_nyc_logo.png'>" +
-        "</div>" +
+        "$$ Thailand Restaurant<br/><br/>" +
+        "5 E 19th St<br/>" +
+        "New York, NY 10003, USA" +
         "</div>";
     var infowindowThaivilla = new google.maps.InfoWindow({
         content: contentStringThaivilla,
