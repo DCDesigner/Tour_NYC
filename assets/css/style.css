@@ -35,7 +35,7 @@ div#logo_text {
     color: #033824;
     font-size: 42px;
     font-family: 'Fredoka One', cursive;
-    margin-left: 53px;
+    margin-left: 51px;
 }
 
 ul.navbar-nav {
@@ -287,7 +287,7 @@ div#map {
     font-weight: bold;
     color: #bf360c;
     position: absolute;
-    top: 100px;
+    margin-top: 15px;
     left: 86px;
 }
 
@@ -552,4 +552,124 @@ div.popover-body {
 
 iv.popover-body {
     background-color: #474ea1 !important;
+}
+
+/* Media Queries */
+
+@media only screen and (max-width: 414px){
+    .mb-0 {
+        margin-bottom: 0!important;
+        width: 417px;
+    }
+
+    button.navbar-toggler{
+        margin-right: 16px;
+    }
+
+    nav.navbar.navbar-expand-lg.navbar.navbar-light.bg-light{
+        width: 418px;
+    }
+    
+    .carousel-inner {
+        margin-top: 136px;
+    }
+
+    .w-100 {
+        width: 83% !important;
+    }
+
+    div#logo_text {
+        margin-right: 155px;
+        font-size: 27px;
+        margin-top: 4px;
+    }
+    
+    #quote {
+        top: 135px;
+        font-size: 24px;
+        line-height: 28px;
+        left: 0px;
+        margin-top: 23px;
+    }
+
+    .scrolldown-area {
+        margin-top: -184px;
+        position: absolute;
+    }
+
+    .about_img {
+        margin-top: 39px;
+        margin-right: 81px;
+    }
+
+    .col-7 {
+        width: 82.333333% !important;
+    }
+
+    .about_text {
+        margin-top: -52px;
+        text-align: center;
+        margin-left: 66px;
+    }
+
+    #offer {
+        margin-bottom: 20px;
+        margin-left: -33px;
+    }
+
+    div.row.margin{
+        max-width: 77%;
+        margin-left: 36px;
+    }
+    .col-4 {
+        flex: 0 0 auto;
+        width: 84.333333% !important;
+        margin-left: 39px;
+    }
+    div.col-4 {
+        margin-bottom: 50px !important;
+    }
+
+    div.video-content {
+        margin-top: 0px;
+    }
+    iframe {
+        width: 312px;
+        margin-top: -126px !important;
+    }
+    #myBtn {
+        right: 110px;
+    }
+
+    button.btn.btn-secondary {
+        right: 178px !important;
+    }
+    #FooterMap {
+        height: 500%;
+        width: 414px;
+        z-index: 0;
+        margin-top: 57px;
+        margin-left: -30px;
+    }
+    
+}
+
+@media only screen and (max-width: 375px){
+
+}
+
+@media only screen and (max-width: 768px){
+
+}
+
+@media only screen and (max-width: 1024px){
+
+}
+
+@media only screen and (max-width: 540px){
+
+}
+
+@media only screen and (max-width: 280px){
+
 }

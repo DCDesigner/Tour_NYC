@@ -69,6 +69,8 @@ function initMap() {
         "Attraction<br/><br/>" +
         "45 Rockefeller Plaza, <br/>" +
         "New York, NY 10011, USA" +
+        "</div>" +
+        "</div>" +
         "</div>";
 
     var infowindow_rockefellercenter = new google.maps.InfoWindow({
@@ -106,6 +108,8 @@ function initMap() {
         "Park<br/><br/>" +
         "767 5th Ave, <br/>" +
         "New York, NY 10153, USA" +
+        "</div>" +
+        "</div>" +
         "</div>";
 
     var infowindow_centralpark = new google.maps.InfoWindow({
@@ -141,6 +145,8 @@ function initMap() {
         "Park<br/><br/>" +
         "13 th Street .47 W 13 th St, <br/>" +
         "New York, NY 10011, USA" +
+        "</div>" +
+        "</div>" +
         "</div>";
 
     var infowindow_washingtonsquare = new google.maps.InfoWindow({
@@ -176,6 +182,8 @@ function initMap() {
         "Promenade Park<br/><br/>" +
         "820 Washington St, <br/>" +
         "New York, NY 10014, USA" +
+        "</div>" +
+        "</div>" +
         "</div>";
 
     var infowindow_highline = new google.maps.InfoWindow({
@@ -211,6 +219,8 @@ function initMap() {
         "Landmark - Attraction<br/><br/>" +
         " Brooklyn Bridge Promenade, Centre St, <br/>" +
         "New York, NY 10001, USA" +
+        "</div>" +
+        "</div>" +
         "</div>";
 
     var infowindow_brooklynbridge = new google.maps.InfoWindow({
@@ -247,6 +257,10 @@ function initMap() {
         "5 star Hotel<br/><br/>" +
         "153 W 57th St, <br/>" +
         "New York, NY 10019, USA" +
+        '<div id ="tag">Today Only</div>' +
+        '<div id="tag_details">30% off</div>' +
+        "</div>" +
+        "</div>" +
         "</div>";
 
     var infowindow_hyatt = new google.maps.InfoWindow({
@@ -285,6 +299,8 @@ function initMap() {
         "New York, NY 10027, USA" +
         '<div id ="tag">Great Deals</div>' +
         '<div id="tag_details">50% off</div>' +
+        "</div>" +
+        "</div>" +
         "</div>";
 
     var infowindow_aloft = new google.maps.InfoWindow({
@@ -317,10 +333,14 @@ function initMap() {
         '<div id="siteNotice_kochi">' +
         '<span id="infowindow_title">Four Seasons Hotel</span>' +
         '<div id="bodyContentkochi">' +
-        "5 star Hotel<br/><br/>" +
+        "5 star Hotel<br/>" +
         "Free Wifi<br/><br/>" +
         "27 Barclay St, <br/>" +
         "New York, NY 10007, USA" +
+        '<div id ="tag">Great Deals</div>' +
+        '<div id="tag_details">10% off</div>' +
+        "</div>" +
+        "</div>" +
         "</div>";
 
     var infowindow_fourseasons = new google.maps.InfoWindow({
@@ -357,6 +377,8 @@ function initMap() {
         "Free Wifi<br/><br/>" +
         "246 Spring St, <br/>" +
         "New York, NY 10013, USA" +
+        "</div>" +
+        "</div>" +
         "</div>";
 
     var infowindow_dominick = new google.maps.InfoWindow({
@@ -394,6 +416,8 @@ function initMap() {
         "Free Wifi<br/><br/>" +
         "32 Hudson Yards, <br/>" +
         "New York, NY 10001, USA" +
+        "</div>" +
+        "</div>" +
         "</div>";
 
     var infowindow_equinox = new google.maps.InfoWindow({
@@ -428,6 +452,8 @@ function initMap() {
         "Korean Restaurant<br/><br/>" +
         "652 10th Ave, <br/>" +
         "New York, NY 10036, USA" +
+        "</div>" +
+        "</div>" +
         "</div>";
 
     var infowindow_kochi = new google.maps.InfoWindow({
@@ -462,7 +488,10 @@ function initMap() {
         "$$$$ French Restaurant<br/><br/>" +
         "155 W 51st St, <br/>" +
         "New York, NY 10019, USA" +
+        "</div>" +
+        "</div>" +
         "</div>";
+
     var infowindowBernardin = new google.maps.InfoWindow({
         content: contentStringBernardin,
         maxwidth: 500,
@@ -501,7 +530,10 @@ function initMap() {
         '<li>Curbside Pickup</li>' +
         '<li>Delivery</li>' +
         '</ul>' +
+        "</div>" +
+        "</div>" +
         "</div>";
+
     var infowindowCilantro = new google.maps.InfoWindow({
         content: contentStringCilantro,
         maxwidth: 500,
@@ -535,7 +567,10 @@ function initMap() {
         "$$ American Restaurant<br/><br/>" +
         "316 E 53rd St, <br/>" +
         "New York, NY  10022, USA" +
+        "</div>" +
+        "</div>" +
         "</div>";
+
     var infowindowSteakhouse = new google.maps.InfoWindow({
         content: contentStringSteakhouse,
         maxwidth: 500,
@@ -569,7 +604,10 @@ function initMap() {
         "$$ Thailand Restaurant<br/><br/>" +
         "5 E 19th St<br/>" +
         "New York, NY 10003, USA" +
+        "</div>" +
+        "</div>" +
         "</div>";
+
     var infowindowThaivilla = new google.maps.InfoWindow({
         content: contentStringThaivilla,
         maxwidth: 500,
@@ -613,6 +651,8 @@ function initFooterMap() {
         '<div id="tag_details">50% off</div>' +
         '<div id="infowindow_image"> ' +
         "<img src='assets/images/tour_nyc_logo.png'>" +
+        "</div>" +
+        "</div>"+
         "</div>" +
         "</div>";
 
